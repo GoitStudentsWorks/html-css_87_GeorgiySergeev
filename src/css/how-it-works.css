@@ -1,0 +1,148 @@
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1280px) {}
+
+.title-how-it {
+    margin: 0 auto;
+    margin-bottom: 14px;
+    width: 100%;   
+    max-width: 624px;
+
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: -0.04em;  
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 768px) {
+   .title-how-it {
+        font-size: 40px;
+        line-height: 1.1;
+   }
+}
+
+
+.descript-how-it {
+    margin: 0 auto;
+    margin-bottom: 44px;
+    width: 100%;
+    max-width: 509px;  
+        
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+    letter-spacing: -0.04em;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+
+
+.list-how-it {
+    margin-bottom: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .list-how-it {
+        margin-bottom: 80px;
+        gap: 24px;
+    }
+}
+
+.link-how-it {
+
+    width: 100%;
+    max-width: 389px;
+}
+
+
+
+.card-how-it {
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+
+    gap: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+    .card-how-it {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.title-box-how-it {
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    
+    width: 136px;  
+    
+    background-color: #a4cb66;
+    border-radius: 200px;
+}
+
+.link-how-it:first-child .title-box-how-it {
+    background-color: #AE1332;
+}
+
+.link-how-it:last-child .title-box-how-it {
+    background-color: #F5CE13;
+}
+
+@media only screen and (min-width: 768px) {
+    .title-box-how-it {
+        margin: 0;
+    }
+}
+
+.title-card-how-it {
+  
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+
+    letter-spacing: -0.04em;
+}
+
+.descript-step-how-it {
+    width: calc(100% - 150px);
+    max-width: 199px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+   
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.04em;
+    
+    color: #000000;
+    
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+
+.gif-how-it{
+    margin: 0 auto;
+    margin-bottom: 150px;
+}

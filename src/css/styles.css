@@ -16,9 +16,12 @@
 @import url('./thanks-mod.css');
 
 body {
- background-color: #ae1332;
- color: white;
-  font-family: 'DM Sans', sans-serif;
+
+  background-color: #ae1332;
+  color: #ffffff;
+
+
+ font-family: 'DM Sans', sans-serif;
   padding-top: 50px;
 }
 :root {
@@ -54,8 +57,10 @@ body {
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+
   outline: 1px solid black;
   margin-bottom: 450px;
+
 }
 
 @media screen and (min-width: 375px) {
