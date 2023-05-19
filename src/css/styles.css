@@ -16,7 +16,8 @@
 @import url('./thanks-mod.css');
 
 body {
- 
+ background-color: #ae1332;
+ color: white;
   font-family: 'DM Sans', sans-serif;
   padding-top: 50px;
 }
