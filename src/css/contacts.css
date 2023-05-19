@@ -1,0 +1,33 @@
+section {
+    background-color: #AE1332;
+}
+
+.container-contacs {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.primary-text-contacs {
+    text-align: center;
+
+    max-width: 335px;
+
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1;  
+
+    color: white;
+}
+
+.list-img-contacs .item:last-child {
+    display: none;
+}
+
+.form-field {
+    display: none;
+}
+
