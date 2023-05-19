@@ -22,7 +22,7 @@ section {
     font-size: 32px;
     line-height: 1;  
 
-    color: white;
+    color: #fff;
 }
 
 .list-img-contacs .item:first-child {
@@ -37,3 +37,35 @@ section {
     display: none;
 }
 
+/* @media screen and (min-width: 768px) {
+    .form-field {
+        display: block;
+    } 
+} */
+
+.text-contacs {
+
+    text-align: center;
+    width: 492px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+
+    color: #fff;
+}
+
+.sub-input {
+    padding: 15px 24px;
+
+    border-radius: 100px;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+
+
+    outline: 1px solid transparent;
+}
+
+.btn-sub {
+     
+}
