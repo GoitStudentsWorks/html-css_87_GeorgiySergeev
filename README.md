@@ -1,3 +1,8 @@
+
+https://georgiysergeev.github.io/group-3-final-project/
+
+
+
 # Vanilla App Template
 
 Цей проект було створено за допомогою Vite. Для знайомства та налаштування
