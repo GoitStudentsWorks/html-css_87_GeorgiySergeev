@@ -166,8 +166,8 @@ img {
   margin-bottom: 7px;
 
   font-weight: 700;
-  font-size: 32px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
 
   letter-spacing: -0.04em;
 }
@@ -253,6 +253,13 @@ img {
   .fruits-link {
     display: block;
     padding-bottom: 53px;
+  }
+
+  .fruits-label {
+    margin-bottom: 7px;
+
+    font-size: 32px;
+    line-height: 1.19;
   }
 
   .fruits-type {
