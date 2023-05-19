@@ -47,6 +47,15 @@ body {
 
   --yellow-bg: #f5ce13;
   --pink-bg: #e03f5e;
+
+  /* мій варіант змінних основних кольорів, всі перелічені і жоден не має по 2 назви */
+  
+  --project-main-color: #AE1332;
+  --primary-black: #000000;
+  --primary-green: #A4CB66;
+  --primary-yellow: #F5CE13;
+  --text-accent-color: #ffffff;
+
 }
 
 .container {

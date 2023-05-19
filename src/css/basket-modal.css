@@ -67,8 +67,6 @@
     }
 }
 
-/* @media screen and (min-width:1280px) {} */
-
 .modal-title {
     font-weight: 500;
     font-size: 28px;
@@ -85,6 +83,19 @@
         line-height: 1.1;
         letter-spacing: -0.04em;
     }
+}
+
+.basket {
+    width: 240px;
+    height: 190px;
+}
+
+@media screen and (min-width:768px) {
+    .basket {
+        width: 325px;
+        height: 277;
+    }
+    
 }
 
 .modal-info {
