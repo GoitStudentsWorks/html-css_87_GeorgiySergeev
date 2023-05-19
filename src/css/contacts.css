@@ -4,6 +4,7 @@ section {
 
 .container-contacs {
     position: relative;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -12,6 +13,7 @@ section {
 
 
 .primary-text-contacs {
+    position: absolute;
     text-align: center;
 
     max-width: 335px;
@@ -21,6 +23,10 @@ section {
     line-height: 1;  
 
     color: white;
+}
+
+.list-img-contacs .item:first-child {
+   margin-top: 53px;
 }
 
 .list-img-contacs .item:last-child {
