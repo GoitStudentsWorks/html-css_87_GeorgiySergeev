@@ -16,9 +16,10 @@
 @import url('./thanks-mod.css');
 
 body {
-  /* background-color: #ae1332;
-  color: #ffffff; */
+  background-color: #ae1332;
+  color: #ffffff;
   font-family: 'DM Sans', sans-serif;
+  padding-top: 50px;
 }
 :root {
   /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -42,30 +43,37 @@ body {
 
   --btn-text-color-norm: #ae1332;
   --btn-text-color-norm: #a4cb66;
+
+  --yellow-bg: #f5ce13;
+  --pink-bg: #e03f5e;
 }
 
 .container {
   max-width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
   outline: 1px solid black;
+  margin-bottom: 450px;
 }
 
 @media screen and (min-width: 375px) {
   .container {
-    max-width: 365px;
+    max-width: 375px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 734px;
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .container {
-    max-width: 1246px;
+    max-width: 1280px;
   }
 }
+
