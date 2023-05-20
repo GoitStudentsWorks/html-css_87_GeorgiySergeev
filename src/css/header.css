@@ -1,36 +1,27 @@
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-
-
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 997;
     width: 100%;
     
     height: 50px;
-background-color: var(--btn-bg-color-hover);
+    background-color: var(--btn-bg-color-hover);
 }
 
 .logo {
 
-
     display: flex;
     align-items: center;
-    text-align: center;
-    
+    text-align: center;    
     outline: none; 
     
     letter-spacing: -0.04em;
     text-transform: uppercase;
 
-
-  outline: none;
-
-
+    outline: none;
     color: var(--primary-bg-color);
-
     transition: color 250ms ease-in-out;
-
 }
 
 @media screen and (min-width: 768px) {
