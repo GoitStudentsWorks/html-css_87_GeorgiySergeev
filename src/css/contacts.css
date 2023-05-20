@@ -1,5 +1,4 @@
 .contacs {
-    margin-bottom: 150px;
     padding-top: 53px;
     background-color: #AE1332;
 }
@@ -7,12 +6,14 @@
 @media screen and (min-width: 768px){
     .contacs {
     margin-top: 79px;
+    margin-bottom: 144px;
     } 
 }
 
 @media screen and (min-width: 1280px){
     .contacs {
     margin-top: 89px; 
+    margin-bottom: 150px;
     } 
 }
 
@@ -31,7 +32,6 @@
     text-align: center;
     
     top: -53px;
-    left: 26px;
     
 
     max-width: 335px;
