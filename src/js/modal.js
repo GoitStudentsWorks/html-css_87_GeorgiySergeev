@@ -47,7 +47,7 @@ var modalButtons = document.querySelectorAll('.js-open-modal'),
         document.querySelector('.modal.active').classList.remove('active');
         this.classList.remove('active');
     });
-=======
+
 (() => {
   const refs = {
     openModalBtn: document.querySelector("[data-modal-open]"),
