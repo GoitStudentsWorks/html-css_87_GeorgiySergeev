@@ -39,6 +39,7 @@
 
 .fruits-list {
   align-items: center;
+  margin-bottom: 44px;
 }
 
 .fruits-item {
@@ -98,9 +99,7 @@
   padding: 137px 24px 72px 25px;
 }
 
-img {
-  height: 276px;
-}
+
 
 .fruits-overlay {
   padding-top: 64px;
@@ -245,4 +244,16 @@ img {
   .fruits-item:nth-child(9) {
     display: inline;
   }
+}
+
+/* added button */
+.order-btn {
+  display: block;
+  width: 114px;
+  height: 114px;
+  color: #ffffff;
+  background-color: #9DC262;
+  border-radius: 50%;
+  margin: 0 auto;
+
 }

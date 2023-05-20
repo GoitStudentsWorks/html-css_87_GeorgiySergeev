@@ -1,3 +1,18 @@
+.ruls{
+    margin-bottom: 80px;
+}
+@media screen and (min-width: 768px) {
+    .ruls{
+        margin-bottom: 144px;
+    }
+    
+}
+
+@media screen and (min-width: 1280px) {
+    .ruls{
+        margin-bottom: 150px;
+    }
+}
 
 @media screen and (min-width: 768px) {}
 
@@ -144,5 +159,5 @@
 
 .gif-how-it{
     margin: 0 auto;
-    margin-bottom: 150px;
+    
 }

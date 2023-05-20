@@ -1,4 +1,4 @@
-/*.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -22,8 +22,8 @@
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%) scale(0.7);
-}
-*/
+} */
+
 
 .modal {
   position: absolute;
@@ -124,4 +124,8 @@
   cursor: pointer;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.strawberry-photo {
+  max-width: 207px;
 }
