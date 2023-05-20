@@ -14,6 +14,7 @@
 @import url('./footer.css');
 @import url('./order-modal.css');
 @import url('./thanks-mod.css');
+@import url('./basket-modal.css');
 
 body {
 
@@ -49,6 +50,15 @@ body {
 
   --yellow-bg: #f5ce13;
   --pink-bg: #e03f5e;
+
+  /* мій варіант змінних основних кольорів, всі перелічені і жоден не має по 2 назви */
+  
+  --project-main-color: #AE1332;
+  --primary-black: #000000;
+  --primary-green: #A4CB66;
+  --primary-yellow: #F5CE13;
+  --text-accent-color: #ffffff;
+
 }
 
 .container {
@@ -82,3 +92,21 @@ body {
   }
 }
 
+.overlay {
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  z-index: 10;
+}
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
