@@ -17,8 +17,8 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
     
-    <script type="module" crossorigin src="/group-3-final-project/assets/index-85ca86ba.js"></script>
-    <link rel="stylesheet" href="/group-3-final-project/assets/index-5b758617.css">
+    <script type="module" crossorigin src="/group-3-final-project/assets/index-8e69611d.js"></script>
+    <link rel="stylesheet" href="/group-3-final-project/assets/index-51741ca4.css">
   </head>
 
   <body>
@@ -600,11 +600,99 @@
         
       </section>
     </main>
+      <!-- modal windows -->
+      
+      <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fresh Harvest Box</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+      rel="stylesheet"
+    />
+    <link href="../css/reset.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/thanks-mod.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="modal-close-btn" type="button" data-modal-close>
+            <svg
+              width="24"
+              height="24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 6 6 18M6 6l12 12"
+                stroke="#fff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <img
+            class="strawberry-photo"
+            srcset="
+              ../img/png/strawberry@1x.png 1x,
+              ../img/png/strawberry@2x.png 2x
+            "
+            src="../img/png/strawberry@1x.png"
+            width="207"
+            height="176"
+            alt="Strawberry"
+          />
+          <h1 class="modal-thankyou-title">THANK YOU</h1>
+          <p class="modal-thankyou-subtitle">
+            Thank you for your order! Our team is preparing your box with fresh,
+            delicious fruits and vegetables, and we'll deliver it straight to
+            your doorstep. We appreciate your business and look forward to
+            providing you with the best possible experience!
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="../js/modal.js"></script>
+  </body>
+</html>
+
+      <div class="overlay">
+    <div class="modal-basket modal" data-modal="3">
+        <button class="close-btn js-modal-close" type="button">
+            <svg class="close-icon">
+                <use href="/group-3-final-project/assets/close-btn-a2bf4e3f.svg"></use>
+            </svg>
+        </button>
+        <h1 class="modal-title">basket</h1>
+        <img 
+            class="basket"
+            srcset="/group-3-final-project/assets/basket@1x-4c303d4e.png 1x, /group-3-final-project/assets/basket@2x-61b5feb0.png 2x"
+            src="/group-3-final-project/assets/basket@1x-4c303d4e.png"
+            alt="empty basket" 
+        />
+        <a class="" href="#organic fruits">Add fruits</a>
+        <p class="modal-info">Your basket is empty. Press the button to add items</p>
+    </div>
+</div>
     <!-- footer -->
     <section class="footer">
       
     </section>
 
+    
     
   </body>
 </html>
