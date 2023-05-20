@@ -278,7 +278,8 @@
 }
 
 /*Tablet styles*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) 
+{
   .fruits-order-btn {
     padding-top: 38px;
     padding-bottom: 38px;
@@ -290,4 +291,4 @@
     font-size: 18px;
     line-height: 1.33;
   }
-
+}
