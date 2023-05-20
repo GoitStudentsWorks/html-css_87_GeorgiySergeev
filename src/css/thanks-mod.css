@@ -24,7 +24,10 @@
   transform: translate(-50%) scale(0.7);
 } */
 
-.modal {
+
+.modal1 {
+
+
   position: absolute;
   top: 96px;
   left: 50%;
@@ -49,14 +52,14 @@
 }
 
 @media screen and (min-width: 375px) {
-  .modal {
+  .modal1 {
     width: 335px;
     height: 426px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .modal {
+  .modal1 {
     max-width: none;
     width: 600px;
     height: 545px;
