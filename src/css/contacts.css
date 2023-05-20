@@ -50,7 +50,6 @@
     .primary-text-contacs {
         max-width: 648px;
         font-size: 54px;
-        line-height: 1; 
 
         top: -79px;
         left: 28px;
@@ -60,8 +59,7 @@
 @media screen and (min-width: 1280px) {
     .primary-text-contacs {
         max-width: 740px;
-        font-size: 64px;
-        line-height: 1; 
+        font-size: 64px; 
 
         top: -89px;
         left: 238px;
