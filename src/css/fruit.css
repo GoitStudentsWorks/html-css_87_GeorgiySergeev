@@ -106,6 +106,7 @@ img {
 .fruits-overlay {
   padding-top: 64px;
   padding-right: 157px;
+  padding-bottom: 24px;
   padding-left: 24px;
 
   content: '';
@@ -246,4 +247,33 @@ img {
   .fruits-item:nth-child(9) {
     display: inline;
   }
+}
+
+/*Кнопка замовлення*/
+.fruits-order-btn {
+  margin-top: 44px;
+  margin-left: auto;
+  margin-right: auto;
+
+  transform: translate(-50%, -50%) rotate(-14deg);
+
+  width: 80px;
+  height: 80px;
+
+  padding-top: 26px;
+  padding-bottom: 26px;
+  padding-right: 8px;
+  padding-left: 25px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 29;
+  text-align: center;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #9dc262;
+  border-radius: 50%;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
