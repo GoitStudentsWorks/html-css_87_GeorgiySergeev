@@ -17,12 +17,10 @@
 @import url('./basket-modal.css');
 
 body {
-
   background-color: #ae1332;
   color: #ffffff;
 
-
- font-family: 'DM Sans', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   padding-top: 50px;
 }
 :root {
@@ -52,13 +50,12 @@ body {
   --pink-bg: #e03f5e;
 
   /* мій варіант змінних основних кольорів, всі перелічені і жоден не має по 2 назви */
-  
-  --project-main-color: #AE1332;
-  --primary-black: #000000;
-  --primary-green: #A4CB66;
-  --primary-yellow: #F5CE13;
-  --text-accent-color: #ffffff;
 
+  --project-main-color: #ae1332;
+  --primary-black: #000000;
+  --primary-green: #a4cb66;
+  --primary-yellow: #f5ce13;
+  --text-accent-color: #ffffff;
 }
 
 .container {
@@ -69,8 +66,6 @@ body {
   margin-right: auto;
 
   outline: 1px solid black;
-  margin-bottom: 450px;
-
 }
 
 @media screen and (min-width: 375px) {
