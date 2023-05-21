@@ -1,4 +1,7 @@
- /* .backdrop {
+
+.thankyou-backdrop {
+
+
   position: fixed;
   top: 0;
   left: 0;
@@ -14,19 +17,18 @@
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden {
+.thankyou-backdrop.is-hidden {
   opacity: 0;
 
   pointer-events: none;
 }
 
-.backdrop.is-hidden .modal {
+.thankyou-backdrop.is-hidden .thankyou-modal {
   transform: translate(-50%) scale(0.7);
-}  */
 
+}
 
-.modal1 {
-
+.thankyou-modal {
 
   position: absolute;
   top: 96px;
@@ -35,7 +37,7 @@
 
   min-height: 426px;
   max-width: 335px;
-  /*overflow: scroll;*/
+  overflow: scroll;
 
   padding-top: 40px;
   padding-right: 20px;
@@ -52,14 +54,18 @@
 }
 
 @media screen and (min-width: 375px) {
-  .modal1 {
+
+  .thankyou-modal {
+
     width: 335px;
     height: 426px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .modal1 {
+
+  .thankyou-modal {
+
     max-width: none;
     width: 600px;
     height: 545px;
@@ -110,7 +116,7 @@
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 
-.modal-close-btn {
+.thankyou-modal-close-btn {
   position: absolute;
   top: 0;
   right: 0;

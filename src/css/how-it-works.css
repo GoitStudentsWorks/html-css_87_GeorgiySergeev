@@ -1,15 +1,15 @@
 .ruls {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 @media screen and (min-width: 768px) {
   .ruls {
-    margin-bottom: 144px;
+    padding-bottom: 144px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .ruls {
-    margin-bottom: 150px;
+    padding-bottom: 150px;
   }
 }
 
