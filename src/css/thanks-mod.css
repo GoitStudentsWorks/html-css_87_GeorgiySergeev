@@ -1,4 +1,4 @@
-/* .backdrop {
+ /* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -22,7 +22,7 @@
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%) scale(0.7);
-} */
+}  */
 
 
 .modal1 {
