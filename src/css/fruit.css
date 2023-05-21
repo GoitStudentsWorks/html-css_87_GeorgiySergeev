@@ -30,7 +30,6 @@
   font-size: 14px;
   line-height: 1.29;
 
-
   display: inline-block;
   justify-content: center;
 
@@ -277,9 +276,24 @@
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 
+.fruits-order-icon {
+  fill: #ffffff;
+  display: block;
+}
+
+.fruits-order-icon:hover,
+.fruits-order-icon:focus {
+  fill: #9dc262;
+}
+
+.fruits-order-btn:hover,
+.fruits-order-btn:focus {
+  background-color: #ffffff;
+  color: #9dc262;
+}
+
 /*Tablet styles*/
-@media screen and (min-width: 768px) 
-{
+@media screen and (min-width: 768px) {
   .fruits-order-btn {
     padding-top: 38px;
     padding-bottom: 38px;
