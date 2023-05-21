@@ -1,4 +1,7 @@
+
 .thankyou-backdrop {
+
+
   position: fixed;
   top: 0;
   left: 0;
@@ -22,9 +25,11 @@
 
 .thankyou-backdrop.is-hidden .thankyou-modal {
   transform: translate(-50%) scale(0.7);
+
 }
 
 .thankyou-modal {
+
   position: absolute;
   top: 96px;
   left: 50%;
@@ -49,14 +54,18 @@
 }
 
 @media screen and (min-width: 375px) {
+
   .thankyou-modal {
+
     width: 335px;
     height: 426px;
   }
 }
 
 @media screen and (min-width: 768px) {
+
   .thankyou-modal {
+
     max-width: none;
     width: 600px;
     height: 545px;
@@ -123,4 +132,8 @@
   cursor: pointer;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.strawberry-photo {
+  max-width: 207px;
 }
