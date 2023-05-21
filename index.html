@@ -18,7 +18,7 @@
     />
     
     <script type="module" crossorigin src="/group-3-final-project/assets/index-8e69611d.js"></script>
-    <link rel="stylesheet" href="/group-3-final-project/assets/index-7892dc1e.css">
+    <link rel="stylesheet" href="/group-3-final-project/assets/index-664c2456.css">
   </head>
 
   <body>
@@ -28,7 +28,7 @@
     <div class="main-nav">
      <div class="logo">
          <svg width="16" height="16" class="logo-icon">
-             <use href="/group-3-final-project/assets/symbol-defs-a54dcfb0.svg#icon-logo"></use>
+             <use href="/group-3-final-project/assets/symbol-defs-e78381b9.svg#icon-logo"></use>
              
          </svg>
      
@@ -44,8 +44,8 @@
         aria-controls="menu-container">
 
         <svg width="24" height="24" aria-label="Switch mobile menu">
-            <use class="icon-menu" href="/group-3-final-project/assets/symbol-defs-a54dcfb0.svg#icon-menu"></use>
-            <use class="icon-cross" href="/group-3-final-project/assets/symbol-defs-a54dcfb0.svg#icon-close"></use>
+            <use class="icon-menu" href="/group-3-final-project/assets/symbol-defs-e78381b9.svg#icon-menu"></use>
+            <use class="icon-cross" href="/group-3-final-project/assets/symbol-defs-e78381b9.svg#icon-close"></use>
         </svg>
 
     </button>         
@@ -69,7 +69,7 @@
     
         <button type="button" class="basket-btn-mobile js-open-modal" data-modal="3">
             <svg width="24" height="24" class="icon-basket-mobile ">
-                <use href="/group-3-final-project/assets/symbol-defs-a54dcfb0.svg#icon-basket-menu"></use>
+                <use href="/group-3-final-project/assets/symbol-defs-e78381b9.svg#icon-basket-menu"></use>
             </svg>
         </button>
     </div>
@@ -77,7 +77,7 @@
 
         <button type="button" class="basket-btn-desk js-open-modal" data-modal="3">
             <svg width="24" height="24" class="icon-basket-desk ">
-                <use href="/group-3-final-project/assets/symbol-defs-a54dcfb0.svg#icon-basket-menu"></use>
+                <use href="/group-3-final-project/assets/symbol-defs-e78381b9.svg#icon-basket-menu"></use>
             </svg>
         </button>
 
@@ -216,7 +216,7 @@
 
   <div class="container fruits">
     <div class="fruits-decription">
-      <h2 class="fruits-title title">ORGANIC FRUITS</h2>
+      <h2 class="fruits-title title" >ORGANIC FRUITS</h2>
       <p class="fruits-text">
         Our organic fruits are hand-picked from local farms and delivered
         straight to your doorstep, ensuring that you get the freshest and most
@@ -793,22 +793,28 @@
   </div>
 </div>
 
-    <div class="overlay">
+    <div class="overlay js-overlay-modal">
     <div class="modal-basket modal" data-modal="3">
         <button class="close-btn js-modal-close" type="button">
-            <svg class="close-icon">
-                <use href="/group-3-final-project/assets/close-btn-f8ccf29b.svg"></use>
+            <svg class="close-icon" width="24" height="24">
+                <use href="/group-3-final-project/assets/symbol-defs-e78381b9.svg#icon-close"></use>
             </svg>
         </button>
-        <h1 class="modal-title">basket</h1>
+        <h2 class="modal-title">basket</h2>
+        <div class="picture-box">
         <img 
             class="basket"
-            srcset="/group-3-final-project/assets/basket@1x-4c303d4e.png 1x, /group-3-final-project/assets/basket@2x-61b5feb0.png 2x"
-            src="/group-3-final-project/assets/basket@1x-4c303d4e.png"
+            srcset="/group-3-final-project/assets/basket@1x-559571c0.jpg 1x, /group-3-final-project/assets/basket@2x-9a8a3d00.jpg 2x"
+            src="./img/basket@1x.png"
             alt="empty basket" 
         />
-        <a class="" href="#organic fruits">Add fruits</a>
-        <p class="modal-info">Your basket is empty. Press the button to add items</p>
+        <a class="add-btn" href="#organic-fruits">
+            <svg class="add-svg" width="16" height="16">
+                <use href="/group-3-final-project/assets/symbol-defs-e78381b9.svg#icon-arrow"></use>
+            </svg>
+            <span class="add-info">Add fruits</span></a>
+        </div>
+        <p class="modal-info">Your basket is empty. <span class="help-info"> Press the button to add items.</span></p>
     </div>
 </div>
     <!-- footer -->
