@@ -52,7 +52,6 @@ body {
   /* мій варіант змінних основних кольорів, всі перелічені і жоден не має по 2 назви */
 
   --project-main-color: #ae1332;
-  --primary-black: #000000;
   --primary-green: #a4cb66;
   --primary-yellow: #f5ce13;
   --text-accent-color: #ffffff;
@@ -96,8 +95,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.4);
-  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 1000;
 }
 
 .modal.active,
