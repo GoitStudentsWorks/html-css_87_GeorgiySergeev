@@ -281,11 +281,6 @@
   display: block;
 }
 
-.fruits-order-icon:hover,
-.fruits-order-icon:focus {
-  fill: #9dc262;
-}
-
 .fruits-order-btn:hover,
 .fruits-order-btn:focus {
   background-color: #ffffff;
