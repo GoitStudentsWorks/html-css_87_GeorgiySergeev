@@ -5,31 +5,18 @@
     <ul class="list-img-contacs">
       <li class="item">
         <picture>
-          <source
-            media="(min-width:1280px)"
-            srcset="
-              ./img/img-contacs/meloun_desk@1x.png 1x,
-              ./img/img-contacs/meloun_desk@2x.png 2x
-            "
-            type="image/jpg"
-          />
-          <source
-            media="(min-width:768px)"
-            srcset="
-              ./img/img-contacs/meloun_tab@1x.png 1x,
-              ./img/img-contacs/meloun_tab@2x.png 2x
-            "
-            type="image/jpg"
-          />
-          <source
-            media="(max-width:767px)"
-            srcset="
-              ./img/img-contacs/meloun_mob@1x.png 1x,
-              ./img/img-contacs/meloun_mob@2x.png 2x
-            "
-            type="image/jpg"
-          />
-          <img src="./img/img-contacs/meloun_mob@1x.png" alt="Melon" />
+
+          <source media="(min-width:1280px)" 
+          srcset="./img/img-contacs/meloun_desk@1x.png 1x, ./img/img-contacs/meloun_desk@2x.png 2x " 
+          type="image/jpg" />
+          <source media="(min-width:768px)" 
+          srcset="./img/img-contacs/meloun_tab@1x.png 1x, ./img/img-contacs/meloun_tab@2x.png 2x" 
+          type="image/jpg" />
+          <source media="(max-width:767px)" 
+          srcset="./img/img-contacs/meloun_mob@1x.png 1x, ./img/img-contacs/meloun_mob@2x.png 2x" 
+          type="image/jpg" />
+          <img src="./img/img-contacs/meloun_mob@1x.png" alt="Melon"  />
+
         </picture>
       </li>
 
@@ -65,14 +52,11 @@
       </p>
       <form class="form-contacs">
         <label>
-          <input
-            type="email"
-            name=""
-            class="sub-input"
-            placeholder="Enter email..."
-          />
-          <button type="submit" class="btn-sub">Send</button>
+
+          <input type="email" name="email-client" class="sub-input" placeholder="Enter email..." />
+
         </label>
+        <button  type="submit" class="btn-sub" data-modal-open>Send</button>
       </form>
     </div>
   </div>
