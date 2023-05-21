@@ -1,3 +1,6 @@
+.overlay {
+    overflow-y: scroll;
+}
 .modal-basket {
     opacity: 0;
     visibility: hidden;
@@ -8,8 +11,6 @@
 
     width: 100%;
     max-width: 335px;
-    height: 100%;
-    max-height: 584px;
     padding: 20px;
 
     background-color: #fff;
@@ -21,14 +22,9 @@
 
 @media screen and (min-width:768px) {
     .modal-basket {
-        width: 600px;
+        max-width: 600px;
+        min-height: 560px;
         padding: 40px;
-    }
-}
-
-@media screen and (min-width:1280px) {
-    .modal-basket {
-        width: 891px;
     }
 }
 
@@ -43,7 +39,7 @@
     width: 24px;
     height: 24px;
 
-    color: var(--primary-bg-color);
+    color: var(--project-main-color);
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -53,7 +49,7 @@
     fill: currentColor;
     width: 12px;
     height: 12px;
-}
+} 
 
 @media screen and (min-width:768px) {
     .close-btn {
@@ -68,6 +64,9 @@
 }
 
 .modal-title {
+    margin-bottom: 50px;
+
+    text-align: start;
     font-weight: 500;
     font-size: 28px;
     line-height: 1;
@@ -88,22 +87,99 @@
 .basket {
     width: 240px;
     height: 190px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 44px;
+    background-color: transparent;
 }
 
 @media screen and (min-width:768px) {
     .basket {
         width: 325px;
-        height: 277;
+        height: auto;
     }
+}
+
+.picture-box {
+    position: relative;
+}
+
+.add-btn {
+    position: absolute;
+    right: 12%;
+    bottom: -10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 74px;
+    height: 74px;
+
+    background-color: var(--primary-green);
+    color: var(--text-accent-color);
+    border-radius: 50%;
+}
+
+@media screen and (min-width:768px) {
+    .add-btn {
+        right: 20%;
+        bottom: -6%;
+
+        width: 90px;
+        height: 90px;
+    }
+}
+
+.add-svg {
+    margin-left: 8px;
+    fill: currentColor;
+}
+
+.add-info {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+    text-transform: uppercase;
+
+    color: var(--text-accent-color);
     
+    transform: translateY(-7%) rotate(-14deg);
+}
+
+@media screen and (min-width:768px) {
+    .add-info {
+        font-size: 16px;
+    }
 }
 
 .modal-info {
-    max-width: 295px;
-    text-align: center;
-
+    width: 206px;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: -0.04em;
+    color: var(--project-main-color);
+}
+
+.help-info {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.17;
+    color: #000;
+}
+
+@media screen and (min-width:768px) {
+    .modal-info {
+        width: 227px;
+        font-size: 24px;
+        line-height: 1.19;
+    }
+
+    .help-info {
+        font-size: 17px;
+        line-height: 1.17;
+    }
 }

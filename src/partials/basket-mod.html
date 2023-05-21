@@ -1,18 +1,24 @@
-<div class="overlay">
+<div class="overlay js-overlay-modal">
     <div class="modal-basket modal" data-modal="3">
         <button class="close-btn js-modal-close" type="button">
-            <svg class="close-icon">
-                <use href="./img/svg/close-btn.svg"></use>
+            <svg class="close-icon" width="24" height="24">
+                <use href="./img/svg/symbol-defs.svg#icon-close"></use>
             </svg>
         </button>
-        <h1 class="modal-title">basket</h1>
+        <h2 class="modal-title">basket</h2>
+        <div class="picture-box">
         <img 
             class="basket"
-            srcset="./img/basket@1x.png 1x, ./img/basket@2x.png 2x"
+            srcset="./img/basket/basket@1x.jpg 1x, ./img/basket/basket@2x.jpg 2x"
             src="./img/basket@1x.png"
             alt="empty basket" 
         />
-        <a class="" href="#organic fruits">Add fruits</a>
-        <p class="modal-info">Your basket is empty. Press the button to add items</p>
+        <a class="add-btn" href="#organic-fruits">
+            <svg class="add-svg" width="16" height="16">
+                <use href="./img/svg/symbol-defs.svg#icon-arrow"></use>
+            </svg>
+            <span class="add-info">Add fruits</span></a>
+        </div>
+        <p class="modal-info">Your basket is empty. <span class="help-info"> Press the button to add items.</span></p>
     </div>
 </div>
