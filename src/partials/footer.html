@@ -1,27 +1,46 @@
-
 <section class="container footer">
   <div class="footer-cover footer-split">
     <div class="left-side">
-      <img
-        class="footer-img"
-        src="../img/footer/image_375@1x.jpg"
-        alt="a woman with bananas"
-      />
-      <div class="footer-logo-text">
-        <svg class="footer-logo" width="16" height="16">
-          <use href="../img/svg/symbol-defs.svg#icon-logo"></use>
-        </svg>
-        <p class="logo-text">fresh harvest box</p>
+      <div class="label-logo">
+        <picture>
+          <source
+            media="(min-width:768x )"
+            srcset="
+              .\img\footer\image_768@1x.jpg  1x,
+              .\img\footer\image_1536@2x.jpg 2x
+            "
+            type="image/jpg"
+          />
+          <source
+            media="(max-width:767px )"
+            srcset="
+              .\img\footer\image_375@1x.jpg 1x,
+              .\img\footer\image_750@2x.jpg 2x
+            "
+            type="image/jpg"
+          />
+          <img
+            class="footer-img"
+            src="./img/footer/image_375@1x.jpg"
+            alt="a woman with bananas"
+          />
+        </picture>
+        <div class="footer-logo-text">
+          <svg class="footer-logo" width="16" height="16">
+            <use href="./img/svg/symbol-defs.svg#icon-logo"></use>
+          </svg>
+          <p class="logo-text">fresh harvest box</p>
+        </div>
       </div>
       <ul class="footer-anchor">
         <li class="anchor-item">
           <a class="anchor-item-text" href="#how-it-works">How It Works</a>
         </li>
         <li class="anchor-item">
-          <a class="anchor-item-text" href="#Fruits">Fruits</a>
+          <a class="anchor-item-text" href="#fruits">Fruits</a>
         </li>
         <li class="anchor-item">
-          <a class="anchor-item-text" href="#Contacts">Contacts</a>
+          <a class="anchor-item-text" href="#contacts">Contacts</a>
         </li>
       </ul>
     </div>
@@ -35,7 +54,7 @@
             rel="noopener no-referrer"
             aria-label="facebook icon"
             ><svg class="icon" width="24" height="24">
-              <use href="../img/svg/symbol-defs.svg#icon-facebook"></use></svg
+              <use href="./img/svg/symbol-defs.svg#icon-facebook"></use></svg
           ></a>
         </li>
         <li class="social-icon">
@@ -46,9 +65,8 @@
             rel="noopener no-referrer"
             aria-label="instagram icon"
             ><svg class="icon" width="24" height="24">
-              <use href="../img/svg/symbol-defs.svg#icon-instagram"></use></svg
+              <use href="./img/svg/symbol-defs.svg#icon-instagram"></use></svg
           ></a>
-
         </li>
         <li class="social-icon">
           <a
@@ -58,7 +76,7 @@
             rel="noopener no-referrer"
             aria-label="youtube icon"
             ><svg class="icon" width="24" height="24">
-              <use href="../img/svg/symbol-defs.svg#icon-youtube"></use></svg
+              <use href="./img/svg/symbol-defs.svg#icon-youtube"></use></svg
           ></a>
         </li>
       </ul>
