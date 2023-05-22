@@ -148,7 +148,7 @@
 }
 
 .sub-input:invalid {
-    outline: rgba(255, 0, 0, 1);
+    outline: 1px solid rgb(225, 73, 73);
 }
 
 .sub-input::placeholder {
@@ -180,7 +180,12 @@
 
     border-radius: 100px;
 
+    transition: background-color 250ms ease-in-out;
     cursor: pointer;
     color: var(--text-accent-color);
     background-color: #9DC162; 
+}
+
+.btn-sub:hover, .btn-sub:focus {
+    background-color: #6c893e;
 }
