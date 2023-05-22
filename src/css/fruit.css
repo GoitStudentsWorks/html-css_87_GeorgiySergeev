@@ -127,7 +127,7 @@
 }
 
 .fruits-thumb {
-  padding: 122px 20px 23px 20px;
+  padding: 122px 20px 43px 20px;
 }
 
 .fruits-overlay {
@@ -236,7 +236,6 @@
 
   .fruits-link {
     display: block;
-    padding-bottom: 53px;
   }
 
   .fruits-label {
@@ -248,6 +247,10 @@
 
   .fruits-type {
     margin-bottom: 261px;
+  }
+
+  .fruits-thumb {
+    padding: 136px 24px 23px 25px;
   }
 }
 
