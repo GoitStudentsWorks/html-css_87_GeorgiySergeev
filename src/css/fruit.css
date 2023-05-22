@@ -276,30 +276,6 @@
 }
 
 .fruits-order-btn {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.29;
-  text-align: center;
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #9dc262;
-  border-radius: 50%;
-  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
-}
-
-.fruits-order-icon {
-  fill: #ffffff;
-}
-
-.fruits-order-btn {
-  transform: rotate(-14deg);
-
   width: 80px;
   height: 80px;
 
@@ -317,16 +293,13 @@
   background-color: #9dc262;
   border-radius: 50%;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+
+  transform: translate(50%, 50%) rotate(-14deg);
 }
 
 .fruits-order-icon {
+  margin-right: 4px;
   fill: #ffffff;
-  display: block;
-}
-
-.fruits-order-icon:hover,
-.fruits-order-icon:focus {
-  fill: #9dc262;
 }
 
 .fruits-order-btn:hover,
@@ -335,14 +308,14 @@
   color: #9dc262;
 }
 
+.fruits-order-btn:hover .fruits-order-icon,
+.fruits-order-btn:focus .fruits-order-icon {
+  fill: #9dc262;
+}
+
 /*Tablet styles*/
 @media screen and (min-width: 768px) {
   .fruits-order-btn {
-    padding-top: 38px;
-    padding-bottom: 38px;
-    padding-right: 17px;
-    padding-left: 36px;
-
     width: 114px;
     height: 114px;
 
