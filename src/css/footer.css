@@ -2,13 +2,16 @@
   .container {
     min-width: 320px;
   }
-
+  .footer {
+    background-color: white;
+  }
   .footer-cover {
     padding-top: 80px;
-    background-color: white;
     padding-bottom: 80px;
   }
-
+  .footer-img {
+    width: 335px;
+  }
   .footer-logo-text {
     margin-top: 20px;
 
@@ -18,7 +21,7 @@
   .footer-logo {
     margin-right: 8px;
   }
-  .footer-text {
+  .logo-text {
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -111,10 +114,66 @@
     padding-left: 32px;
     padding-right: 32px;
   }
+  .footer-split {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .right-side {
+    padding-top: 38px;
+    margin-left: auto;
+
+    align-items: center;
+  }
+  .footer-img {
+    width: 349px;
+  }
+
+  .footer-anchor {
+    margin-top: 80px;
+  }
+
+  .social-media {
+    margin-top: 0;
+  }
+
+  .social-icon {
+    width: 44px;
+    height: 44px;
+  }
+  .icon {
+    width: 28px;
+    height: 28px;
+
+    opacity: 0.8;
+  }
+
+  .footer-contacts {
+    text-align: left;
+
+    font-size: 18px;
+    line-height: 1.33;
+
+    text-transform: uppercase;
+  }
 }
 
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
+  }
+  .left-side {
+    display: flex;
+    justify-content: center;
+  }
+  .right-side {
+    padding-top: 0px;
+
+    margin-left: auto;
+  }
+
+  .footer-anchor {
+    margin: auto;
+    margin-left: 243px;
   }
 }
