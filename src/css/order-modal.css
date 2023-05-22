@@ -16,7 +16,7 @@
 
 
   width: 100%;
-  max-width: 335px;
+  width: 335px;
   text-align: start;
   padding: 20px;
   background: #ffffff;
@@ -25,17 +25,58 @@
 
 @media screen and (min-width: 768px) {
   .order-modal {
-    max-width: none;
-    max-width: 704px;
+    
+    width: 704px;
     padding: 40px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .order-modal {
-    max-width: 891px;
+    width: 891px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .order-modal {
+   
+
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 290px 467px;
+    background-image: url(../img/modal-window-img/modal-background-tab@1x.png);
+  }
+
+  /*retina tab screen */
+   @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .order-modal {
+      background-image: url(../img/modal-window-img/modal-background-tab@2x.png);
+    }
+  } 
+}
+
+/*desktop screen */
+
+@media screen and (min-width: 1280px) {
+  .order-modal {
+    background-repeat: no-repeat;
+    background-position: right bottom;
+     
+    background-size: 471px 458px;
+    background-image: url(../img/modal-window-img/modal-background-desk@1x.png);
+  }
+
+ 
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .order-modal {
+      background-image: url(../img/modal-window-img/modal-background-desk@2x.png);
+    }
+  }
+} 
 
 /* Стили для активных классов подложки и окна */
 
@@ -81,7 +122,9 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  transition: scale var(--animation);
 }
+
 
 .order-close-icon {
   fill: currentColor;
@@ -101,13 +144,14 @@
 }
 
 .order-list {
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 }
 
 @media screen and (min-width: 768px) {
   .order-list {
     display: flex;
     gap: 12px;
+    margin-bottom: 40px;
   }
 }
 
@@ -118,9 +162,8 @@
 }
 
 .order-item {
-  
-  position: relative;
   margin-bottom: 12px;
+  position: relative;
   padding-right: 32px;
   padding-left: 20px;
 
@@ -137,6 +180,9 @@
     width: calc((100% - 24px) / 3);
     /* height: 250px; */
     flex-wrap: wrap;
+    margin-bottom: 0px;
+    padding-right: 14px;
+    padding-left: 14px;
   }
 }
 
@@ -163,12 +209,27 @@
   margin-right: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .order-block {
+    padding-top: 40px;
+    margin-bottom: 4px;
+  }
+}
+
+
+  
 .order-item-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: -0.04em;
 }
+@media screen and (min-width: 1280px) {
+  .order-item-name {
+    font-size: 24px;
+    line-height: 1.17;
+    
+  } }
 
 .order-item-type {
   font-weight: 400;
@@ -178,7 +239,8 @@
   letter-spacing: -0.02em;
 }
 
-.order-checkbox {
+/* cheboxes */
+.strawberry-checkbox {
   position: absolute;
   top: 14px;
   right: 14px;
@@ -188,6 +250,59 @@
   width: 16px;
   border: 1.5px solid #ffffff;
   border-radius: 4px;
+}
+.strawberry-checkbox-icon{
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  opacity: 0;
+  transition: opacity var(--animation);
+}
+.strawberry-checkbox:checked + .strawberry-checkbox-icon {
+  opacity: 1;
+}
+
+.apple-checkbox {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  appearance: none;
+  height: 16px;
+  width: 16px;
+  border: 1.5px solid #ffffff;
+  border-radius: 4px;
+}
+.apple-checkbox-icon{
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  opacity: 0;
+  transition: opacity var(--animation);
+}
+.apple-checkbox:checked + .apple-checkbox-icon {
+  opacity: 1;
+}
+.fruit-checkbox {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  appearance: none;
+  height: 16px;
+  width: 16px;
+  border: 1.5px solid #ffffff;
+  border-radius: 4px;
+}
+.fruit-checkbox-icon{
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  opacity: 0;
+  transition: opacity var(--animation);
+}
+.fruit-checkbox:checked + .fruit-checkbox-icon {
+  opacity: 1;
 }
 
 .order-strawberry-image {
@@ -200,14 +315,14 @@
   @media screen and (min-width: 768px) {
       .order-strawberry-image {
         margin: 0 auto;
-        width: 172px;
+        width: 133px;
       }
     }
   
     @media screen and (min-width: 1280px) {
       .order-strawberry-image {
-        justify-content: center;
-        width: 229px;
+        
+        width: 173px;
       }
     }
 
@@ -227,7 +342,7 @@
 
   @media screen and (min-width: 1280px) {
     .order-image {
-      justify-content: center;
+     
       width: 229px;
     }
   }
@@ -262,9 +377,16 @@
     line-height: 1.3;
     letter-spacing: +0.04em;
     color: rgba(0, 0, 0, 1);
-  /* outline: transparent;
-    transition: border-color var(--slow) var(--animation); */
+    outline: transparent;
+    transition: opacity var(--animation);
 }
+
+
+
+.input-modal-field:not(:placeholder-shown):required:invalid {
+  border-color: red;
+  outline: 2px solid red;
+} 
 
 
 

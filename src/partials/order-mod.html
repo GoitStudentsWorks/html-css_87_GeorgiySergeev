@@ -20,16 +20,16 @@
             <li class="order-item">
                 
                     <div class="order-block">
-                        <label class="modal-privacy" for="modal-privacy">
+                        <label class="order-choise-strawberry" for="order-choise-strawberry">
                             <h3 class="order-item-name">
                                 Strawberry Basket
                             </h3>
                             <p class="order-item-type">
                                 Plant
                             </p>
-                            <input class="order-checkbox" type="checkbox" id="modal-privacy">
-                            <svg class="order-checkbox-icon" width="10" height="8">
-                                <use href="./images/icons.svg#icon-checkbox"></use>
+                            <input class="strawberry-checkbox" type="checkbox" id="order-choise-strawberry">
+                            <svg class="strawberry-checkbox-icon" width="8" height="8">
+                                <use href="./img/svg/symbol-defs.svg#icon-pick"></use>
                             </svg>
                             
                         </label>                        
@@ -93,7 +93,7 @@
             <li class="order-item">
                 
                     <div class="order-block">
-                        <label class="modal-privacy" for="modal-privacy">
+                        <label class="order-choise-apple" for="order-choise-apple">
                             <h3 class="order-item-name">
                                 Apple Basket
                                 
@@ -101,9 +101,9 @@
                             <p class="order-item-type">
                                 Plant
                             </p>
-                            <input class="order-checkbox" type="checkbox" id="modal-privacy">
-                            <svg class="order-checkbox-icon" width="10" height="8">
-                                <use href="./images/icons.svg#icon-checkbox"></use>
+                            <input class="apple-checkbox" type="checkbox" id="order-choise-apple">
+                            <svg class="apple-checkbox-icon" width="8" height="8">
+                                <use href="./img/svg/symbol-defs.svg#icon-pick"></use>
                             </svg>
                             
                         </label>                        
@@ -170,16 +170,16 @@
             <li class="order-item">
                 
                     <div class="order-block">
-                        <label class="modal-privacy" for="modal-privacy">
+                        <label class="order-choise-fruit" for="order-choise-fruit">
                             <h3 class="order-item-name">
                                 Fruits Basket
                             </h3>
                             <p class="order-item-type" >
                                 Plant
                             </p>
-                            <input class="order-checkbox" type="checkbox" id="modal-privacy">
-                            <svg class="order-checkbox-icon" width="10" height="8">
-                                <use href="./images/icons.svg#icon-checkbox"></use>
+                            <input class="fruit-checkbox" type="checkbox" id="order-choise-fruit">
+                            <svg class="fruit-checkbox-icon" width="8" height="8">
+                                <use href="./img/svg/symbol-defs.svg#icon-pick"></use>
                             </svg>
                             
                         </label>                        
@@ -248,16 +248,17 @@
 
         <div class="client-data">
             <label class="contact-label" for="user-name" >Name</label>
-               <input class="input-modal-field" type="text" name="user-name" id="user-name" placeholder="Enter full name..." >
+               <input class="input-modal-field" type="text" name="user-name" id="user-name" required
+               pattern="^[a-zA-Z]+\s[a-zA-Z]+$"  placeholder="Enter full name..." >
             
             
              <label class="contact-label" for="user-email" >Email</label>
-                <input class="input-modal-field" type="email" name="user-email" id="user-email" placeholder="Enter email..." >
+                <input class="input-modal-field" type="email" name="user-email" id="user-email" required placeholder="Enter email..." >
             
             
             
             <label class="contact-label" for="card-nomber" >Card nomber</label>
-               <input class="input-modal-field" type="number" step="1" max="9999999999999999" name="card-nomber" id="card-nomber" placeholder="Enter card...">
+               <input class="input-modal-field" type="number" step="1" min="999999999999999" max="9999999999999999" required name="card-nomber" id="card-nomber" placeholder="Enter card...">
             
             
             
@@ -273,4 +274,3 @@
     
  </div>
 
- <div class="overlay js-overlay-modal "></div>
