@@ -1,7 +1,4 @@
 .modal-basket {
-    opacity: 0;
-    visibility: hidden;
-   
     position: absolute;
     top: 50%;
     left: 50%;
@@ -12,8 +9,8 @@
 
     background-color: #fff;
     border-radius: 20px;
-    
-    transform: translate(-50%, -100% );
+
+    transform: translate(-50%, -100%);
     transition: opacity var(--animation), visibility var(--animation), transform var(--animation);
 }
 
@@ -28,19 +25,19 @@
 .basket-overlay.active {
     opacity: 1;
     visibility: visible;
-   
+
 }
 
 .modal-basket.active {
     transform: translate(-50%, -50%);
 }
 
-.close-btn {
+.basket-close-btn {
     position: absolute;
     top: 20px;
     right: 20px;
 
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     width: 24px;
@@ -54,30 +51,30 @@
     transition: scale var(--animation);
 }
 
-    .close-icon {
+.basket-close-icon {
     fill: currentColor;
-    width: 12px;
-    height: 12px;
-} 
+    width: 24px;
+    height: 24px;
+}
 
 @media screen and (min-width:768px) {
-    .close-btn {
+    .basket-close-btn {
         width: 28px;
         height: 28px;
     }
 
-    .close-icon {
-        width: 14px;
-        height: 14px;
+    .basket-close-icon {
+        width: 28px;
+        height: 28px;
     }
 
-    .close-icon:hover,
-    .close-icon:focus {
+    .basket-close-icon:hover,
+    .basket-close-icon:focus {
         scale: 1.1;
     }
 }
 
-.modal-title {
+.basket-title {
     margin-bottom: 52px;
     text-align: start;
     font-weight: 500;
@@ -90,7 +87,7 @@
 }
 
 @media screen and (min-width:768px) {
-    .modal-title {
+    .basket-title {
         margin-bottom: 38px;
 
         font-size: 40px;
@@ -126,16 +123,24 @@
     bottom: -10%;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     width: 74px;
     height: 74px;
 
+    text-align: start;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    text-transform: uppercase;
+
     background-color: var(--primary-green);
     color: var(--text-accent-color);
     border-radius: 50%;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 
+    transform: rotate(-14deg);
     transition: color var(--animation), background-color var(--animation), scale var(--animation);
 }
 
@@ -155,35 +160,12 @@
         scale: 1.15;
         border: 1px solid var(--primary-green);
     }
-
-    .add-btn:hover>.add-info,
-    .add-btn:focus>.add-info {
-        color: var(--primary-green);
-    }
 }
 
 .add-svg {
     margin-left: 8px;
     margin-right: 8px;
     fill: currentColor;
-}
-
-.add-info {
-    text-align: start;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.29;
-    text-transform: uppercase;
-
-    color: var(--text-accent-color);
-    
-    transform: translateY(-9%) rotate(-14deg);
-}
-
-@media screen and (min-width:768px) {
-    .add-info {
-        font-size: 16px;
-    }
 }
 
 .modal-info {
