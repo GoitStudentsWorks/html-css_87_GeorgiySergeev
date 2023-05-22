@@ -26,14 +26,14 @@
 @media screen and (min-width: 768px) {
   .order-modal {
     max-width: none;
-    width: 702px;
+    max-width: 704px;
     padding: 40px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .order-modal {
-    width: 891px;
+    max-width: 891px;
   }
 }
 
@@ -118,6 +118,7 @@
 }
 
 .order-item {
+  
   position: relative;
   margin-bottom: 12px;
   padding-right: 32px;
