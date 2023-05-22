@@ -1,10 +1,7 @@
-.overlay {
-    overflow-y: scroll;
-}
 .modal-basket {
     opacity: 0;
     visibility: hidden;
-
+   
     position: absolute;
     top: 50%;
     left: 50%;
@@ -15,17 +12,27 @@
 
     background-color: #fff;
     border-radius: 20px;
-    overflow-y: auto;
-
-    transform: translate(-50%, -50%)
+    
+    transform: translate(-50%, -100% );
+    transition: opacity var(--animation), visibility var(--animation), transform var(--animation);
 }
 
 @media screen and (min-width:768px) {
     .modal-basket {
         max-width: 600px;
-        min-height: 560px;
         padding: 40px;
     }
+}
+
+.modal-basket.active,
+.basket-overlay.active {
+    opacity: 1;
+    visibility: visible;
+   
+}
+
+.modal-basket.active {
+    transform: translate(-50%, -50%);
 }
 
 .close-btn {
@@ -43,9 +50,11 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+
+    transition: scale var(--animation);
 }
 
-.close-icon {
+    .close-icon {
     fill: currentColor;
     width: 12px;
     height: 12px;
@@ -61,11 +70,15 @@
         width: 14px;
         height: 14px;
     }
+
+    .close-icon:hover,
+    .close-icon:focus {
+        scale: 1.1;
+    }
 }
 
 .modal-title {
-    margin-bottom: 50px;
-
+    margin-bottom: 52px;
     text-align: start;
     font-weight: 500;
     font-size: 28px;
@@ -78,6 +91,8 @@
 
 @media screen and (min-width:768px) {
     .modal-title {
+        margin-bottom: 38px;
+
         font-size: 40px;
         line-height: 1.1;
         letter-spacing: -0.04em;
@@ -89,14 +104,15 @@
     height: 190px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 44px;
+    margin-bottom: 60px;
     background-color: transparent;
 }
 
 @media screen and (min-width:768px) {
     .basket {
         width: 325px;
-        height: auto;
+        height: 278px;
+        margin-bottom: 48px;
     }
 }
 
@@ -119,32 +135,49 @@
     background-color: var(--primary-green);
     color: var(--text-accent-color);
     border-radius: 50%;
+
+    transition: color var(--animation), background-color var(--animation), scale var(--animation);
 }
 
 @media screen and (min-width:768px) {
     .add-btn {
-        right: 20%;
+        right: 23%;
         bottom: -6%;
 
         width: 90px;
         height: 90px;
     }
+
+    .add-btn:hover,
+    .add-btn:focus {
+        background-color: var(--text-accent-color);
+        color: var(--primary-green);
+        scale: 1.15;
+        border: 1px solid var(--primary-green);
+    }
+
+    .add-btn:hover>.add-info,
+    .add-btn:focus>.add-info {
+        color: var(--primary-green);
+    }
 }
 
 .add-svg {
     margin-left: 8px;
+    margin-right: 8px;
     fill: currentColor;
 }
 
 .add-info {
-    font-weight: 700;
+    text-align: start;
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.29;
     text-transform: uppercase;
 
     color: var(--text-accent-color);
     
-    transform: translateY(-7%) rotate(-14deg);
+    transform: translateY(-9%) rotate(-14deg);
 }
 
 @media screen and (min-width:768px) {
@@ -157,8 +190,9 @@
     width: 206px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 21px;
     line-height: 1.33;
     letter-spacing: -0.04em;
     color: var(--project-main-color);
