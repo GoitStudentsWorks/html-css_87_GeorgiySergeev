@@ -13,11 +13,6 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-}
-
-@media screen and (min-width: 1280px) {
-}
 
 .title-how-it {
   margin: 0 auto;
@@ -105,16 +100,16 @@
 
   width: 136px;
 
-  background-color: #a4cb66;
+  background-color: var(--btn-bg-color-norm);
   border-radius: 200px;
 }
 
 .link-how-it:first-child .title-box-how-it {
-  background-color: #ae1332;
+  background-color: var(--primary-bg-color);
 }
 
 .link-how-it:last-child .title-box-how-it {
-  background-color: #f5ce13;
+  background-color: var(--yellow-bg);
 }
 
 @media only screen and (min-width: 768px) {
@@ -147,6 +142,41 @@
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 
-.gif-how-it {
+.box-gif {
+  position: relative;
+  overflow: hidden;
+
   margin: 0 auto;
+
+  width: 100%;
+  max-width: 860px;
+  height: 476px;
+  border-radius: 20px;
 }
+
+
+.gif-how-it {  
+  position:absolute;
+  right: -372px;
+  left: -153px;
+  margin: 0 auto;
+  max-width: 860px;
+  height: 476px;
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .gif-how-it {
+    right: -8px;
+    left: -148px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .gif-how-it {
+    right: 0;
+    left: 0;
+  }
+}
+
+
