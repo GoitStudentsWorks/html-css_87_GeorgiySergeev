@@ -114,7 +114,10 @@
 
 .fruits-link {
   display: block;
-  padding: 137px 24px 72px 25px;
+}
+
+.fruits-thumb {
+  padding: 122px 20px 72px 20px;
 }
 
 .fruits-overlay {
@@ -162,7 +165,6 @@
   line-height: 1.29;
 
   width: 121px;
-  height: 42px;
 
   letter-spacing: -0.04em;
 
@@ -220,7 +222,6 @@
     line-height: 1.33;
 
     width: 136px;
-    height: 48px;
   }
 
   .fruits-link {
@@ -265,13 +266,8 @@
 
 .fruits-order-btn {
   display: flex;
-  justify-content: center;
   align-items: center;
-
-  width: 80px;
-  height: 80px;
-
-  margin-top: 44px;
+  gap: 4px;
 
   font-style: normal;
   font-weight: 500;
@@ -290,15 +286,14 @@
   fill: #ffffff;
 }
 
-/*
 .fruits-order-btn {
-  display: inline-block;
-  transform: translate(-50%, -50%) rotate(-14deg);
+  transform: rotate(-14deg);
 
   width: 80px;
   height: 80px;
 
-  margin-top: 44px;
+  margin-left: auto;
+  margin-right: auto;
 
   font-style: normal;
   font-weight: 500;
@@ -328,7 +323,6 @@
   background-color: #ffffff;
   color: #9dc262;
 }
-*/
 
 /*Tablet styles*/
 @media screen and (min-width: 768px) {
@@ -340,6 +334,7 @@
 
     width: 114px;
     height: 114px;
+
     font-size: 18px;
     line-height: 1.33;
   }
