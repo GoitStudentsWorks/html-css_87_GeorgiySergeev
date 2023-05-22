@@ -1,3 +1,19 @@
+.container.fruits {
+  padding-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .container.fruits {
+    padding-bottom: 144px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container.fruits {
+    padding-bottom: 150px;
+  }
+}
+
 .fruits-decription {
   display: block;
   max-width: 334px;
@@ -30,7 +46,9 @@
   font-size: 14px;
   line-height: 1.29;
 
-  margin: 0 auto  ;
+  display: inline-block;
+  justify-content: center;
+
   text-align: center;
   letter-spacing: -0.04em;
 
@@ -46,6 +64,17 @@
   position: relative;
   margin-bottom: 14px;
   border-radius: 20px;
+
+  transform: scale(1);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fruits-item:hover,
+.fruits-item:focus {
+  transform: scale(1.03);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -96,12 +125,16 @@
 
 .fruits-link {
   display: block;
-  padding: 137px 24px 72px 25px;
+}
+
+.fruits-thumb {
+  padding: 122px 20px 42px 20px;
 }
 
 .fruits-overlay {
   padding-top: 64px;
   padding-right: 157px;
+  padding-bottom: 24px;
   padding-left: 24px;
 
   content: '';
@@ -143,7 +176,6 @@
   line-height: 1.29;
 
   width: 121px;
-  height: 42px;
 
   letter-spacing: -0.04em;
 
@@ -201,7 +233,6 @@
     line-height: 1.33;
 
     width: 136px;
-    height: 48px;
   }
 
   .fruits-link {
@@ -244,13 +275,51 @@
   }
 }
 
-/* added button */
-.order-btn {
+.fruits-order-btn {
+  width: 80px;
+  height: 80px;
+
   display: block;
-  width: 114px;
-  height: 114px;
+  margin: 0 auto;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
   color: #ffffff;
   background-color: #9dc262;
   border-radius: 50%;
-  margin: 0 auto;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+
+  transform: rotate(-14deg);
+}
+
+.fruits-order-icon {
+  margin-right: 4px;
+  fill: #ffffff;
+}
+
+.fruits-order-btn:hover,
+.fruits-order-btn:focus {
+  background-color: #ffffff;
+  color: #9dc262;
+}
+
+.fruits-order-btn:hover .fruits-order-icon,
+.fruits-order-btn:focus .fruits-order-icon {
+  fill: #9dc262;
+}
+
+/*Tablet styles*/
+@media screen and (min-width: 768px) {
+  .fruits-order-btn {
+    width: 114px;
+    height: 114px;
+
+    font-size: 18px;
+    line-height: 1.33;
+  }
 }

@@ -16,6 +16,7 @@
 @import url('./thanks-mod.css');
 @import url('./basket-modal.css');
 
+
 body {
   background-color: #ae1332;
   color: #ffffff;
@@ -52,10 +53,10 @@ body {
   /* мій варіант змінних основних кольорів, всі перелічені і жоден не має по 2 назви */
 
   --project-main-color: #ae1332;
-  --primary-black: #000000;
   --primary-green: #a4cb66;
   --primary-yellow: #f5ce13;
   --text-accent-color: #ffffff;
+  --animation: 250ms ease-in-out;
 }
 
 .container {
@@ -96,12 +97,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.4);
-  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 30;
+  transition: opacity var(--animation), visibility var(--animation);
 }
 
-.modal.active,
-.overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
