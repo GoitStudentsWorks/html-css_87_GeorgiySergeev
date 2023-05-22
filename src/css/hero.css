@@ -80,6 +80,7 @@
 
 @media screen and (min-width: 1280px) {
     .hero-container {
+        padding-bottom: 45px;
         background-image:
             url(../img/hero/desctop/image_banana_desc@1x.png),
             url(../img/hero/desctop/image_strawberry_desc@1x.png);
@@ -189,13 +190,6 @@
             }
         }
 }
-
-@media screen and (min-width: 1280px) {
-    .hero-img-wrapper {
-        margin-bottom: 123px;
-    }
-}
-
 
 .hero-main-img {
     min-height: 420px;
