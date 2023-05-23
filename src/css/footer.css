@@ -160,6 +160,10 @@
   .icon-symbol:focus {
     background-color: rgba(174, 19, 50, 0.1);
   }
+  .anchor-item-text:hover,
+  .anchor-item-text:focus {
+    color: var(--primary-green);
+  }
 }
 
 @media screen and (min-width: 1280px) {
