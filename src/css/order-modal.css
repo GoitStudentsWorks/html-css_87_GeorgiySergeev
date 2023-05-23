@@ -72,6 +72,7 @@
   }
 }
 
+
 /* Стили для активных классов подложки и окна */
 
 .order-modal.active,
@@ -173,9 +174,11 @@
     width: calc((100% - 24px) / 3);
 
     flex-wrap: wrap;
+
     margin-bottom: 0px;
     padding-right: 14px;
     padding-left: 14px;
+
   }
 }
 
@@ -198,15 +201,18 @@
 }
 .order-block {
   padding-top: 20px;
+  padding-left: 6px;
   margin-right: auto;
 }
 
 @media screen and (min-width: 768px) {
   .order-block {
+
     padding-top: 40px;
     margin-bottom: 4px;
   }
 }
+
 
 .order-item-name {
   font-weight: 700;
@@ -241,6 +247,7 @@
   border: 1.5px solid #ffffff;
   border-radius: 4px;
 }
+
 .strawberry-checkbox-icon {
   position: absolute;
   top: 18px;
@@ -293,6 +300,7 @@
 }
 .fruit-checkbox:checked + .fruit-checkbox-icon {
   opacity: 1;
+
 }
 
 .order-strawberry-image {
@@ -307,6 +315,7 @@
     padding-top: 0px;
     width: 133px;
   }
+
 }
 
 @media screen and (min-width: 1280px) {
@@ -315,6 +324,7 @@
   }
 }
 
+
 .order-image {
   padding-top: 16px;
   width: 106px;
@@ -322,16 +332,20 @@
 }
 
 @media screen and (min-width: 768px) {
+
   .order-image {
     padding-top: 0px;
     margin: 0 auto;
     width: 172px;
+
   }
 }
+
 
 @media screen and (min-width: 1280px) {
   .order-image {
     width: 229px;
+
   }
 }
 
