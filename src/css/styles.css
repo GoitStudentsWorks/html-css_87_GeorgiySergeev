@@ -50,11 +50,8 @@ body {
   --yellow-bg: #f5ce13;
   --pink-bg: #e03f5e;
 
-  /* мій варіант змінних основних кольорів, всі перелічені і жоден не має по 2 назви */
-
   --project-main-color: #ae1332;
   --primary-green: #a4cb66;
-  --primary-yellow: #f5ce13;
   --text-accent-color: #ffffff;
   --animation: 250ms ease-in-out;
 }
@@ -110,12 +107,10 @@ body {
 .modal {
   
   /* Скрываем окна  */
+  
   opacity: 0;
   visibility: hidden;
   
-  
- 
- 
   
   /*  Центрируем и задаем z-index */
   position: fixed;
