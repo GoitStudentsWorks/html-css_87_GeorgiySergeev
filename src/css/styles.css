@@ -116,7 +116,7 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  /*  */
   z-index: 30; /* Должен быть выше чем у подложки*/
   
   /*  Побочные стили   */
@@ -125,7 +125,7 @@ body {
   padding: 30px;
   border-radius: 3px;
   background-color: #fff; */
-  transition: opacity var(--animation), visibility var(--animation);
+  transition: opacity var(--animation), visibility var(--animation), transform var(--animation);
 }
 
 /* Стили для активных классов подложки и окна */
