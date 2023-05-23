@@ -240,6 +240,8 @@
   border: 1px solid var(--primary-green);
   background-color: var(--text-accent-color);
   padding: 15px 10px;
+  border-radius: 10px;
+  z-index: 15;
 }
 
 
