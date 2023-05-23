@@ -434,6 +434,12 @@
     width: 125px;
 }
 
+@media screen and (min-width: 768px) {
+    .hero-btn-item:nth-last-child(-n + 2) {
+        width: 110px;
+    }
+}
+
 .hero-text-title {
     display: flex;
     align-items: center;
@@ -458,10 +464,12 @@
     border-radius: 1000px;
 }
 
-@media screen and (min-width: 768px) {
-    .hero-btn-item:nth-last-child(-n + 2) {
-    width: 110px;
-}
 
+@media screen and (min-width: 768px) {
+.hero-btn-links:hover>.hero-text-title,
+.hero-btn-links:focus>.hero-text-title {
+    color: var(--primary-green);
+    border-color: var(--primary-green);
+}
 }
 
