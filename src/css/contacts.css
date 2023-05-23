@@ -1,18 +1,15 @@
 .contacs {
-    padding-top: 53px;
     padding-bottom: 80px;
 }
 
 @media screen and (min-width: 768px){
     .contacs {
-    margin-top: 79px;
     padding-bottom: 144px;
     } 
 }
 
 @media screen and (min-width: 1280px){
     .contacs {
-    margin-top: 89px; 
     padding-bottom: 150px;
     } 
 }
@@ -20,18 +17,32 @@
 .container-contacs {
     position: relative;
 
+    padding-top: 53px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 } 
 
+@media screen and (min-width: 768px){
+    .container-contacs {
+        padding-top: 79px; 
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .container-contacs {
+        padding-top: 89px; 
+    }
+}
+
+
 
 .primary-text-contacs {
     position: absolute;
     text-align: center;
     
-    top: -53px;
+    top: 0;
     
 
     max-width: 335px;
@@ -49,7 +60,7 @@
         max-width: 648px;
         font-size: 54px;
 
-        top: -79px;
+        top: 0;
         
     }
 }
@@ -59,7 +70,7 @@
         max-width: 740px;
         font-size: 64px; 
 
-        top: -89px;
+        top: 0;
         
     }
 }
