@@ -29,7 +29,7 @@
         <load src="partials/hero.html" />
       </section>
 
-      <section class="ruls">
+      <section class="ruls" id="how-it-works">
         <load src="partials/how-it-works.html" />
       </section>
 
@@ -40,16 +40,27 @@
         <load src="partials/contacs.html" />
       </section>
     </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <load src="partials/footer.html" />
+    </footer>
+
+    <!-- overlay -->
+
     <!-- modal windows -->
+    <div class="overlay js-overlay-modal"></div>
     <load src="partials/order-mod.html" />
     <load src="partials/thanks-mod.html" />
     <load src="partials/basket-mod.html" />
-    <!-- footer -->
-    <section class="footer">
-      <load src="partials/footer.html" />
-    </section>
 
-    <script type="module" src="./js/main.js"></script>
+    <div class="overlay js-overlay-modal"></div>
+
+    <script src="./js/thanks-modal.js"></script>
+    <script type="go-top" src="./js/scroll-to-top.js"></script>
+
+
+      <script type="module" src="./js/main.js"></script>
     <script type="module" src="./js/modal.js"></script>
   </body>
 </html>

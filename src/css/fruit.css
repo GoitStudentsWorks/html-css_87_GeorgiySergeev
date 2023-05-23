@@ -1,3 +1,19 @@
+.fruits {
+  padding-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .fruits {
+    padding-bottom: 144px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .fruits {
+    padding-bottom: 150px;
+  }
+}
+
 .fruits-decription {
   display: block;
   max-width: 334px;
@@ -24,12 +40,12 @@
 
 .fruits-text {
   margin-bottom: 4px;
+
   max-width: 334px;
 
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
-
 
   display: inline-block;
   justify-content: center;
@@ -49,12 +65,22 @@
   position: relative;
   margin-bottom: 14px;
   border-radius: 20px;
+
+  transform: scale(1);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fruits-item:hover,
+.fruits-item:focus {
+  transform: scale(1.03);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .fruits-item {
     max-width: 335px;
-    height: 465px;
   }
 }
 
@@ -99,28 +125,17 @@
 
 .fruits-link {
   display: block;
-  padding: 137px 24px 72px 25px;
 }
 
-.fruits-overlay {
-  padding-top: 64px;
-  padding-right: 157px;
-  padding-bottom: 24px;
-  padding-left: 24px;
-
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-
-  opacity: 1;
+.fruits-thumb {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 60px;
 }
 
 .fruits-label {
+  margin-left: 24px;
+  padding-top: 64px;
   margin-bottom: 7px;
 
   font-weight: 700;
@@ -131,7 +146,8 @@
 }
 
 .fruits-type {
-  margin-bottom: 277px;
+  margin-left: 24px;
+  margin-bottom: 4px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.33;
@@ -140,14 +156,16 @@
 }
 
 .fruits-price {
-  padding: 12px 17.5px;
+  position: absolute;
+  bottom: 24px;
+  margin-left: 24px;
+
+  padding: 12px 24px 12px 24px;
+  max-width: 126px;
 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
-
-  width: 121px;
-  height: 42px;
 
   letter-spacing: -0.04em;
 
@@ -188,7 +206,7 @@
 
     flex-basis: calc((100% - 16px) / var(--fr-items));
     max-width: 344px;
-    height: 465px;
+
     margin-bottom: 0px;
   }
 
@@ -201,27 +219,28 @@
   }
 
   .fruits-price {
+    padding-left: 17.5px;
+    padding-right: 17.5px;
+
     font-size: 18px;
     line-height: 1.33;
 
-    width: 136px;
-    height: 48px;
+    max-width: 136px;
   }
 
   .fruits-link {
     display: block;
-    padding-bottom: 53px;
   }
 
   .fruits-label {
-    margin-bottom: 7px;
-
     font-size: 32px;
     line-height: 1.19;
   }
 
-  .fruits-type {
-    margin-bottom: 261px;
+  .fruits-thumb {
+    padding-left: 25px;
+    padding-right: 24px;
+    padding-bottom: 23px;
   }
 }
 
@@ -246,23 +265,18 @@
   .fruits-item:nth-child(9) {
     display: inline;
   }
+  .fruits-thumb {
+    padding-right: 47px;
+    padding-left: 47px;
+  }
 }
 
 .fruits-order-btn {
-  display: block;
-  transform: rotate(-14deg);
-
   width: 80px;
   height: 80px;
 
-  margin-top: 44px;
-  margin-left: auto;
-  margin-right: auto;
-
-  padding-top: 26px;
-  padding-bottom: 26px;
-  padding-right: 8px;
-  padding-left: 25px;
+  display: block;
+  margin: 0 auto;
 
   font-style: normal;
   font-weight: 500;
@@ -275,19 +289,32 @@
   background-color: #9dc262;
   border-radius: 50%;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+
+  transform: rotate(-14deg);
+}
+
+.fruits-order-icon {
+  margin-right: 4px;
+  fill: #ffffff;
+}
+
+.fruits-order-btn:hover,
+.fruits-order-btn:focus {
+  background-color: #ffffff;
+  color: #9dc262;
+}
+
+.fruits-order-btn:hover .fruits-order-icon,
+.fruits-order-btn:focus .fruits-order-icon {
+  fill: #9dc262;
 }
 
 /*Tablet styles*/
-@media screen and (min-width: 768px) 
-{
+@media screen and (min-width: 768px) {
   .fruits-order-btn {
-    padding-top: 38px;
-    padding-bottom: 38px;
-    padding-right: 17px;
-    padding-left: 36px;
-
     width: 114px;
     height: 114px;
+
     font-size: 18px;
     line-height: 1.33;
   }
