@@ -4,12 +4,16 @@
     left: 50%;
 
     width: 100%;
+    height: 100%;
+    max-height: 426px;
     max-width: 335px;
     padding: 20px;
 
     background-color: #fff;
     border-radius: 20px;
-
+    box-shadow: inset 0 0 35px 5px rgba(0, 0, 0, 0.25), inset 0 2px 1px 1px rgba(255, 255, 255, 0.9), inset 0 -2px 1px rgba(0, 0, 0, 0.25);
+    
+    overflow-y: auto;
     transform: translate(-50%, -100%);
     transition: opacity var(--animation), visibility var(--animation), transform var(--animation);
 }
@@ -17,6 +21,8 @@
 @media screen and (min-width:768px) {
     .modal-basket {
         max-width: 600px;
+        height: auto;
+        max-height: none;
         padding: 40px;
     }
 }
@@ -70,7 +76,7 @@
 
     .basket-close-icon:hover,
     .basket-close-icon:focus {
-        scale: 1.1;
+        scale: 1.2;
     }
 }
 
@@ -123,24 +129,24 @@
     bottom: -10%;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-
-    width: 74px;
-    height: 74px;
-
+    
+    padding: 22px 6px;
+    
     text-align: start;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.29;
+    letter-spacing: -0.04em;
     text-transform: uppercase;
 
     background-color: var(--primary-green);
     color: var(--text-accent-color);
     border-radius: 50%;
     text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 
-    transform: rotate(-14deg);
     transition: color var(--animation), background-color var(--animation), scale var(--animation);
 }
 
@@ -149,8 +155,11 @@
         right: 23%;
         bottom: -6%;
 
-        width: 90px;
-        height: 90px;
+        font-size: 18px;
+        line-height: 1.33;
+        letter-spacing: -0.04em;
+
+        padding: 26px 11px;
     }
 
     .add-btn:hover,
@@ -160,12 +169,28 @@
         scale: 1.15;
         border: 1px solid var(--primary-green);
     }
+
+    .add-svg {
+        margin-right: 10px;
+    }
 }
 
 .add-svg {
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-right: 6px;
     fill: currentColor;
+    transform: translatey(50%);
+}
+
+.add-text {
+    width: 48px;
+    transform: translatey(-9%) rotate(-14deg);
+
+}
+
+@media screen and (min-width:768px){
+    .add-text {
+        width: 58px;
+    }
 }
 
 .modal-info {
