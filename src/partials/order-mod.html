@@ -1,79 +1,76 @@
+<div class="order-modal modal" data-modal="1">
+  <h2 class="order-modal-title">Your Order</h2>
 
+  <!--   close order button  -->
+  <button class="order-close-btn button js-modal-close" type="button">
+    <svg class="order-close-icon">
+      <use href="./img/svg/symbol-defs.svg#icon-close-btn"></use>
+    </svg>
+  </button>
 
-    <div class="order-modal modal" data-modal="1">
-        <h2 class="order-modal-title">Your Order</h2>
+  <form class="order-form" name="order-form">
+    <div class="order-cards">
+      <ul class="order-list">
+        <li class="order-item">
+          <div class="order-block">
+            <h3 class="order-item-name">Strawberry Basket</h3>
+            <p class="order-item-type">Plant</p>
+            <label
+              class="order-choise-strawberry"
+              for="order-choise-strawberry"
+            >
+              <input
+                class="strawberry-checkbox"
+                type="checkbox"
+                id="order-choise-strawberry"
+              />
+              <svg class="strawberry-checkbox-icon" width="8" height="8">
+                <use href="./img/svg/symbol-defs.svg#icon-pick"></use>
+              </svg>
+            </label>
+          </div>
 
-    <!--   close order button  -->
-    <button
-    class="order-close-btn button js-modal-close" type="button">
+          <div class="order-strawberry-image">
+            <picture>
+              <!-- Desktop -->
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./img/modal-window-img/strawberry-basket-desk@1x.png 1x,
+                  ./img/modal-window-img/strawberry-basket-desk@2x.png 2x
+                "
+                type="image/png"
+              />
 
-        <svg class="order-close-icon" > 
-          <use  href="./img/svg/symbol-defs.svg#icon-close-btn"></use>
-        </svg>
-      </button>
-      
+              <!-- Tablet -->
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./img/modal-window-img/strawberry-basket-tab@1x.png 1x,
+                  ./img/modal-window-img/strawberry-basket-tab@2x.png 2x
+                "
+                type="image/png"
+              />
 
-      <form class="order-form" name="order-form">
+              <!-- Phone -->
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./img/modal-window-img/strawberry-basket-mob@1x.png 1x,
+                  ./img/modal-window-img/strawberry-basket-mob@2x.png 2x
+                "
+                type="image/png"
+              />
+              <img
+                src="./img/modal-window-img/strawberry-basket-desk@2x.png"
+                alt="Strawberry basket"
+                width="173"
+                height="196"
+                loading="lazy"
+              />
+            </picture>
+            <!-- <img  srcset="
 
-      <div class="order-cards">
-        <ul class="order-list">
-            <li class="order-item">
-                
-                    <div class="order-block">
-                        <h3 class="order-item-name">
-                            Strawberry Basket
-                        </h3>
-                        <p class="order-item-type">
-                            Plant
-                        </p>
-                        <label class="modal-privacy" for="modal-privacy">
-                            <input class="order-checkbox" type="checkbox" id="modal-privacy">
-                            <svg class="order-checkbox-icon" width="8" height="8">
-                                <use href="./img/svg/symbol-defs.svg#icon-pick"></use>
-                            </svg>
-                            
-                        </label>                        
-                    </div>
-
-                    <div class="order-strawberry-image">
-                        <picture >
-                            <!-- Desktop -->
-                            <source
-                            media="(min-width: 1280px)"
-                            srcset="
-                            ./img/modal-window-img/strawberry-basket-desk@1x.png 1x,
-                            ./img/modal-window-img/strawberry-basket-desk@2x.png 2x
-                            "
-                            type="image/png"
-                            />
-
-                            <!-- Tablet -->
-                            <source
-                            media="(min-width: 768px)"
-                            srcset="
-                            ./img/modal-window-img/strawberry-basket-tab@1x.png 1x,
-                            ./img/modal-window-img/strawberry-basket-tab@2x.png 2x
-                            "
-                            type="image/png"
-                            />
-
-                            <!-- Phone -->
-                            <source
-                            media="(max-width: 767px)"
-                            srcset="
-                            ./img/modal-window-img/strawberry-basket-mob@1x.png 1x,
-                            ./img/modal-window-img/strawberry-basket-mob@2x.png 2x
-                            "
-                            type="image/png"
-                            />
-                            <img  
-                            src="./img/modal-window-img/strawberry-basket-desk@2x.png"                        
-                            alt="Strawberry basket"
-                            width="173"
-                            height="196"
-                            loading="lazy">
-                        </picture>
-                        <!-- <img  srcset="
                         ./img/modal-window-img/strawberry-basket-mob@1x.png 88w,
                         ./img/modal-window-img/strawberry-basket-tab@1x.png 133w,
                         ./img/modal-window-img/strawberry-basket-desk@1x.png 173w,
@@ -87,67 +84,66 @@
                         width="173"
                         height="196"
                         loading="lazy"> -->
-                    </div>
-            </li>
+          </div>
+        </li>
 
-            <li class="order-item">
-                
-                    <div class="order-block">
-                        <h3 class="order-item-name">
-                            Apple Basket
-                            
-                        </h3>
-                        <p class="order-item-type">
-                            Plant
-                        </p>
-                        <label class="modal-privacy" for="modal-privacy">
-                            <input class="order-checkbox" type="checkbox" id="modal-privacy">
-                            <svg class="order-checkbox-icon" width="8" height="8">
-                                <use href="./img/svg/symbol-defs.svg#icon-pick"></use>
-                            </svg>
-                            
-                        </label>                        
-                    </div>
 
-                    <div class="order-image">
-                        <picture>
-                            <!-- Desktop -->
-                            <source
-                            media="(min-width: 1280px)"
-                            srcset="
-                            ./img/modal-window-img/apple-basket-desk@1x.png 1x,
-                            ./img/modal-window-img/apple-basket-desk@2x.png 2x
-                            "
-                            type="image/png"
-                            />
+        <li class="order-item">
+          <div class="order-block">
+            <h3 class="order-item-name">Apple Basket</h3>
+            <p class="order-item-type">Plant</p>
+            <label class="order-choise-apple" for="order-choise-apple">
+              <input
+                class="apple-checkbox"
+                type="checkbox"
+                id="order-choise-apple"
+              />
+              <svg class="apple-checkbox-icon" width="8" height="8">
+                <use href="./img/svg/symbol-defs.svg#icon-pick"></use>
+              </svg>
+            </label>
+          </div>
 
-                            <!-- Tablet -->
-                            <source
-                            media="(min-width: 768px)"
-                            srcset="
-                            ./img/modal-window-img/apple-basket-tab@1x.png 1x,
-                            ./img/modal-window-img/apple-basket-tab@2x.png 2x
-                            "
-                            type="image/png"
-                            />
+          <div class="order-image">
+            <picture>
+              <!-- Desktop -->
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./img/modal-window-img/apple-basket-desk@1x.png 1x,
+                  ./img/modal-window-img/apple-basket-desk@2x.png 2x
+                "
+                type="image/png"
+              />
 
-                            <!-- Phone -->
-                            <source
-                            media="(max-width: 767px)"
-                            srcset="
-                            ./img/modal-window-img/apple-basket-mob@1x.png 1x,
-                            ./img/modal-window-img/apple-basket-mob@2x.png 2x
-                            "
-                            type="image/png"
-                            />
-                            <img  
-                            src="./img/modal-window-img/apple-basket-desk@2x.png"                        
-                            alt="Apple basket"
-                            width="229"
-                            height="196"
-                            loading="lazy">
-                        </picture>
-                        <!-- <img  srcset="
+              <!-- Tablet -->
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./img/modal-window-img/apple-basket-tab@1x.png 1x,
+                  ./img/modal-window-img/apple-basket-tab@2x.png 2x
+                "
+                type="image/png"
+              />
+
+              <!-- Phone -->
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./img/modal-window-img/apple-basket-mob@1x.png 1x,
+                  ./img/modal-window-img/apple-basket-mob@2x.png 2x
+                "
+                type="image/png"
+              />
+              <img
+                src="./img/modal-window-img/apple-basket-desk@2x.png"
+                alt="Apple basket"
+                width="229"
+                height="196"
+                loading="lazy"
+              />
+            </picture>
+            <!-- <img  srcset="
                         ./img/modal-window-img/apple-basket-mob@1x.png 106w,
                         ./img/modal-window-img/apple-basket-tab@1x.png 172w,
                         ./img/modal-window-img/apple-basket-mob@2x.png 212w,
@@ -161,67 +157,68 @@
                         width="229"
                         height="196"
                         loading="lazy"> -->
-                    </div>                
-            </li>
 
-            <li class="order-item">
-                
-                    <div class="order-block">
-                        <h3 class="order-item-name">
-                            Fruits Basket
-                        </h3>
-                        <p class="order-item-type" >
-                            Plant
-                        </p>
-                        <label class="fruits-checkbox" for="fruits-checkbox">
-                            <input class="order-checkbox" type="checkbox" id="fruits-checkbox">
-                            <svg class="order-checkbox-icon" width="8" height="8">
-                                <use href="./img/svg/symbol-defs.svg#icon-pick"></use>
-                            </svg>
-                            
-                        </label>                        
-                    </div>
+          </div>
+        </li>
 
-                    <div class="order-image">
-                        <picture>
-                            <!-- Desktop -->
-                            <source
-                            media="(min-width: 1280px)"
-                            srcset="
-                            ./img/modal-window-img/fruits-basket-desk@1x.png 1x,
-                            ./img/modal-window-img/fruits-basket-desk@2x.png 2x
-                            "
-                            type="image/png"
-                            />
+        <li class="order-item">
+          <div class="order-block">
+            <h3 class="order-item-name">Fruits Basket</h3>
+            <p class="order-item-type">Plant</p>
+            <label class="order-choise-fruit" for="order-choise-fruit">
+              <input
+                class="fruit-checkbox"
+                type="checkbox"
+                id="order-choise-fruit"
+              />
+              <svg class="fruit-checkbox-icon" width="8" height="8">
+                <use href="./img/svg/symbol-defs.svg#icon-pick"></use>
+              </svg>
+            </label>
+          </div>
 
-                            <!-- Tablet -->
-                            <source
-                            media="(min-width: 768px)"
-                            srcset="
-                            ./img/modal-window-img/fruits-basket-tab@1x.png 1x,
-                            ./img/modal-window-img/fruits-basket-tab@2x.png 2x
-                            "
-                            type="image/png"
-                            />
+          <div class="order-image">
+            <picture>
+              <!-- Desktop -->
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./img/modal-window-img/fruits-basket-desk@1x.png 1x,
+                  ./img/modal-window-img/fruits-basket-desk@2x.png 2x
+                "
+                type="image/png"
+              />
 
-                            <!-- Phone -->
-                            <source
-                            media="(max-width: 767px)"
-                            srcset="
-                            ./img/modal-window-img/fruits-basket-mob@1x.png 1x,
-                            ./img/modal-window-img/fruits-basket-mob@2x.png 2x
-                            "
-                            type="image/png"
-                            />
-                            <img  
-                            src="./img/modal-window-img/fruits-basket-desk@2x.png"                        
-                            alt="Fruits basket"
-                            width="229"
-                            height="196"
-                            loading="lazy">
-                        </picture>
-                        
-                        <!-- <img   srcset="
+
+              <!-- Tablet -->
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./img/modal-window-img/fruits-basket-tab@1x.png 1x,
+                  ./img/modal-window-img/fruits-basket-tab@2x.png 2x
+                "
+                type="image/png"
+              />
+
+              <!-- Phone -->
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./img/modal-window-img/fruits-basket-mob@1x.png 1x,
+                  ./img/modal-window-img/fruits-basket-mob@2x.png 2x
+                "
+                type="image/png"
+              />
+              <img
+                src="./img/modal-window-img/fruits-basket-desk@2x.png"
+                alt="Fruits basket"
+                width="229"
+                height="196"
+                loading="lazy"
+              />
+            </picture>
+
+            <!-- <img   srcset="
                         ./img/modal-window-img/fruits-basket-mob@1x.png 106w,
                         ./img/modal-window-img/fruits-basket-tab@1x.png 172w,
                         ./img/modal-window-img/fruits-basket-mob@2x.png 212w,
@@ -235,38 +232,60 @@
                         width="229"
                         height="196"
                         loading="lazy"> -->
-                    </div>                
-            </li>            
-        </ul>
-      </div>
 
-      
+          </div>
+        </li>
+      </ul>
+    </div>
 
-        <div class="client-data">
-            <label class="contact-label" for="user-name" >Name</label>
-               <input class="input-modal-field" type="text" name="user-name" id="user-name" placeholder="Enter full name..." >
-            
-            
-             <label class="contact-label" for="user-email" >Email</label>
-                <input class="input-modal-field" type="email" name="user-email" id="user-email" placeholder="Enter email..." >
-            
-            
-            
-            <label class="contact-label" for="card-nomber" >Card nomber</label>
-               <input class="input-modal-field" type="number" step="1" max="9999999999999999" name="card-nomber" id="card-nomber" placeholder="Enter card...">
-            
-            
-            
-            
-             <label class="contact-label" for="comment">Comment</label>
-             <textarea class="comment-field" name="comment" id="comment" rows="8" placeholder="Enter comments..."></textarea>
-            
-            
-             <button class="modal-send-btn button" type="submit">Send</button>
-        </div>
+    <div class="client-data">
+      <label class="contact-label" for="user-name">Name</label>
+      <input
+        class="input-modal-field"
+        type="text"
+        name="user-name"
+        id="user-name"
+        required
+        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+        placeholder="Enter full name..."
+      />
 
-       </form>
-    
- </div>
 
- 
+      <label class="contact-label" for="user-email">Email</label>
+      <input
+        class="input-modal-field"
+        type="email"
+        name="user-email"
+        id="user-email"
+        required
+        placeholder="Enter email..."
+      />
+
+      <label class="contact-label" for="card-nomber">Card nomber</label>
+      <input
+        class="input-modal-field"
+        type="number"
+        step="1"
+        min="999999999999999"
+        max="9999999999999999"
+        required
+        name="card-nomber"
+        id="card-nomber"
+        placeholder="Enter card..."
+      />
+
+      <label class="contact-label" for="comment">Comment</label>
+      <textarea
+        class="comment-field"
+        name="comment"
+        id="comment"
+        rows="8"
+        placeholder="Enter comments..."
+      ></textarea>
+
+
+      <button class="modal-send-btn button" type="submit">Send</button>
+    </div>
+  </form>
+</div>
+

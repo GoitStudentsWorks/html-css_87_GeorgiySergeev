@@ -8,32 +8,67 @@
   opacity: 0;
   visibility: hidden;
 
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 999; */
-
-
   width: 100%;
-  max-width: 335px;
+  width: 335px;
   text-align: start;
   padding: 20px;
   background: #ffffff;
   border-radius: 20px;
+
+  /* CUSTOM SHADOW */
+  box-shadow: inset 0 0 35px 5px rgba(0, 0, 0, 0.25),
+    inset 0 2px 1px 1px rgba(255, 255, 255, 0.9),
+    inset 0 -2px 1px rgba(0, 0, 0, 0.25);
 }
 
 @media screen and (min-width: 768px) {
   .order-modal {
-    max-width: none;
-    max-width: 704px;
+    width: 704px;
     padding: 40px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .order-modal {
-    max-width: 891px;
+    width: 891px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .order-modal {
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 290px 467px;
+    background-image: url(../img/modal-window-img/modal-background-tab@1x.png);
+  }
+
+  /*retina tab screen */
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .order-modal {
+      background-image: url(../img/modal-window-img/modal-background-tab@2x.png);
+    }
+  }
+}
+
+/*desktop screen */
+
+@media screen and (min-width: 1280px) {
+  .order-modal {
+    background-repeat: no-repeat;
+    background-position: right bottom;
+
+    background-size: 471px 458px;
+    background-image: url(../img/modal-window-img/modal-background-desk@1x.png);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .order-modal {
+      background-image: url(../img/modal-window-img/modal-background-desk@2x.png);
+    }
   }
 }
 
@@ -82,6 +117,7 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  transition: scale var(--animation);
 }
 
 .order-close-icon {
@@ -102,13 +138,14 @@
 }
 
 .order-list {
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 }
 
 @media screen and (min-width: 768px) {
   .order-list {
     display: flex;
     gap: 12px;
+    margin-bottom: 40px;
   }
 }
 
@@ -119,9 +156,8 @@
 }
 
 .order-item {
-  
-  position: relative;
   margin-bottom: 12px;
+  position: relative;
   padding-right: 32px;
   padding-left: 20px;
 
@@ -136,20 +172,19 @@
 @media screen and (min-width: 768px) {
   .order-item {
     width: calc((100% - 24px) / 3);
-    /* height: 250px; */
+
     flex-wrap: wrap;
-    padding-top: 40px;
+
+    margin-bottom: 0px;
     padding-right: 14px;
     padding-left: 14px;
-    padding-bottom: 14px;
-    margin-bottom: 0;
+
   }
 }
 
 @media screen and (min-width: 1280px) {
   .order-item {
     width: calc((100% - 40px) / 3);
-    /* height: 308px; */
   }
 }
 
@@ -172,8 +207,9 @@
 
 @media screen and (min-width: 768px) {
   .order-block {
-    padding-top: 0px;
-   
+
+    padding-top: 40px;
+    margin-bottom: 4px;
   }
 }
 
@@ -199,7 +235,8 @@
   letter-spacing: -0.02em;
 }
 
-.order-checkbox {
+/* cheboxes */
+.strawberry-checkbox {
   position: absolute;
   top: 14px;
   right: 14px;
@@ -210,55 +247,107 @@
   border: 1.5px solid #ffffff;
   border-radius: 4px;
 }
-.order-checkbox-icon {
+
+.strawberry-checkbox-icon {
   position: absolute;
   top: 18px;
   right: 18px;
+  opacity: 0;
+  transition: opacity var(--animation);
+}
+.strawberry-checkbox:checked + .strawberry-checkbox-icon {
+  opacity: 1;
+}
+
+.apple-checkbox {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  appearance: none;
+  height: 16px;
+  width: 16px;
+  border: 1.5px solid #ffffff;
+  border-radius: 4px;
+}
+.apple-checkbox-icon {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  opacity: 0;
+  transition: opacity var(--animation);
+}
+.apple-checkbox:checked + .apple-checkbox-icon {
+  opacity: 1;
+}
+.fruit-checkbox {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  appearance: none;
+  height: 16px;
+  width: 16px;
+  border: 1.5px solid #ffffff;
+  border-radius: 4px;
+}
+.fruit-checkbox-icon {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  opacity: 0;
+  transition: opacity var(--animation);
+}
+.fruit-checkbox:checked + .fruit-checkbox-icon {
+  opacity: 1;
+
 }
 
 .order-strawberry-image {
-    padding-top: 16px;
-    width: 88px;
-    padding-bottom: 14px;
-  
-  }
-  
-  @media screen and (min-width: 768px) {
-      .order-strawberry-image {
-        margin: 0 auto;
-        width: 133px;
-        padding: 4px 0 0 0;
+  padding-top: 16px;
+  width: 88px;
+  padding-bottom: 14px;
+}
 
-      }
-    }
-  
-    @media screen and (min-width: 1280px) {
-      .order-strawberry-image {
-        width: 173px;
-      }
-    }
+@media screen and (min-width: 768px) {
+  .order-strawberry-image {
+    margin: 0 auto;
+    padding-top: 0px;
+    width: 133px;
+  }
+
+}
+
+@media screen and (min-width: 1280px) {
+  .order-strawberry-image {
+    width: 173px;
+  }
+}
+
 
 .order-image {
   padding-top: 16px;
   width: 106px;
   padding-bottom: 14px;
-
 }
 
 @media screen and (min-width: 768px) {
-    .order-image {
-      /* margin: 0 auto; */
-      width: 172px;
-      padding: 4px 0 0 0;
-      margin: 0 auto;
-    }
-  }
 
-  @media screen and (min-width: 1280px) {
-    .order-image {
-      width: 229px;
-    }
+  .order-image {
+    padding-top: 0px;
+    margin: 0 auto;
+    width: 172px;
+
   }
+}
+
+
+@media screen and (min-width: 1280px) {
+  .order-image {
+    width: 229px;
+
+  }
+}
 
 .client-data {
   display: flex;
@@ -268,13 +357,13 @@
   max-width: 100%;
 }
 @media screen and (min-width: 768px) {
-    .client-data {
-      width: 360px;
-    }
+  .client-data {
+    width: 360px;
   }
+}
 
-.contact-label{
-    display:none;
+.contact-label {
+  display: none;
 }
 
 .input-modal-field {
@@ -286,15 +375,18 @@
   padding-left: 24px;
 
   font-weight: 400;
-    font-size: 14px;
-    line-height: 1.3;
-    letter-spacing: +0.04em;
-    color: rgba(0, 0, 0, 1);
-  /* outline: transparent;
-    transition: border-color var(--slow) var(--animation); */
+  font-size: 14px;
+  line-height: 1.3;
+  letter-spacing: +0.04em;
+  color: rgba(0, 0, 0, 1);
+  outline: transparent;
+  transition: opacity var(--animation);
 }
 
-
+.input-modal-field:not(:placeholder-shown):required:invalid {
+  border-color: red;
+  outline: 2px solid red;
+}
 
 .input-modal-field::placeholder {
   font-weight: 400;
@@ -304,54 +396,51 @@
   color: rgba(0, 0, 0, 0.5);
 }
 
-.comment-field{
-    width: 100%;
-    resize: none;
-     
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    border-radius: 20px;
-    padding-left: 24px;
-    padding-top: 12px;
-    margin-bottom: 6px;  
-    
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.3;
-    letter-spacing: +0.04em;
-    color: rgba(0, 0, 0, 1);
+.comment-field {
+  width: 100%;
+  resize: none;
+
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding-left: 24px;
+  padding-top: 12px;
+  margin-bottom: 6px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3;
+  letter-spacing: +0.04em;
+  color: rgba(0, 0, 0, 1);
 }
 .comment-field::placeholder {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.3;
-    letter-spacing: -0.04em;
-    color: rgba(0, 0, 0, 0.5);
-  }
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3;
+  letter-spacing: -0.04em;
+  color: rgba(0, 0, 0, 0.5);
+}
 
 .modal-send-btn {
-    display: block;
-    min-width: 92px;
-    min-height: 42px;
-    padding: 12px 24px;
+  display: block;
+  min-width: 92px;
+  min-height: 42px;
+  padding: 12px 24px;
 
-    font-family: inherit;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.3;
-    letter-spacing: -0.04em;
-  
-    color: white;
-    background: #9DC162;
-    cursor: pointer;
-    border-radius: 100px;
-    border: none; 
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3;
+  letter-spacing: -0.04em;
 
+  color: white;
+  background: #9dc162;
+  cursor: pointer;
+  border-radius: 100px;
+  border: none;
 }
 @media screen and (min-width: 768px) {
-    .modal-send-btn {
-        min-width: 114px;
-        min-height: 48px;
-    }
+  .modal-send-btn {
+    min-width: 114px;
+    min-height: 48px;
   }
-
-  
+}
