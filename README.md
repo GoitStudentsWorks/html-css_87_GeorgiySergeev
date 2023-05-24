@@ -7,7 +7,7 @@ https://github.com/GeorgiySergeev/group-3-final-project
 
 Dev Monsters
 
-GitHab - Георгий Сергеев Teem Lead
+Teem Lead /GitHab, code review/- Георгий Сергеев 
 Header  + mobile menu  - Оксана Танцюра
 Hero -  Вікторія Черкашина Scrum Master
 How it works - Мальвіна Мукша

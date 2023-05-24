@@ -466,12 +466,13 @@
 
 .hero-btn-links {
     cursor: default;
+    
 }
 @media screen and (min-width: 768px) {
 .hero-btn-links:hover>.hero-text-title,
 .hero-btn-links:focus>.hero-text-title {
     color: var(--primary-green);
     border-color: var(--primary-green);
+    transition: color var(--animation);
 }
 }
-
