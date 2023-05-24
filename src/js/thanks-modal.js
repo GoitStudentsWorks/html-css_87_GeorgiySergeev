@@ -5,8 +5,8 @@ const backdrop = document.querySelector('.overlay');
 const openModalBtn = document.querySelector('.contacts-button');
 const closeBtns = document.querySelectorAll('.close-btn');
 const openSuccessModal = () => {
-  thankModal.classList.add(MODAL_ACTIVE_CLASS_NAME);
   backdrop.classList.add(MODAL_ACTIVE_CLASS_NAME);
+  thankModal.classList.add(MODAL_ACTIVE_CLASS_NAME);
 };
 const closeSuccessModal = () => {
   thankModal.classList.remove(MODAL_ACTIVE_CLASS_NAME);

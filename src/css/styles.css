@@ -15,7 +15,10 @@
 @import url('./thanks-mod.css');
 @import url('./basket-modal.css');
 
-
+html {
+  tab-size: 4;
+  scroll-behavior: smooth;
+}
 body {
   background-color: #ae1332;
   color: #ffffff;
