@@ -17,7 +17,7 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
     
-    <script type="module" crossorigin src="/group-3-final-project/assets/index-e0739957.js"></script>
+    <script type="module" crossorigin src="/group-3-final-project/assets/index-434c3e2b.js"></script>
     <link rel="stylesheet" href="/group-3-final-project/assets/index-22fc021f.css">
   </head>
 
@@ -37,7 +37,7 @@
     <!--Button hamburger-->
     <button
       type="button"
-      class="menu-toggle"
+      class="menu-toggle js-open-menu js-close-menu"
       data-menu-button
       aria-expanded="false"
       aria-controls="menu-container"
@@ -52,13 +52,13 @@
     </button>
 
     <!--mobile menu-->
-    <div class="menu-container" data-menu id="menu-container">
+    <div class="menu-container js-menu-container" data-menu id="menu-container">
       <div class="navigation">
         <nav class="site-nav">
           <ul class="site-menu list">
-            <li class="item"><a href="#how-it-works" class="menu link">How It Works</a></li>
-            <li class="item"><a href="#fruits" class="menu link">Fruits</a></li>
-            <li class="item"><a href="#contacts" class="menu link">Contacts</a></li>
+            <li class="item"><a href="#how-it-works" class="menu link js-link">How It Works</a></li>
+            <li class="item"><a href="#fruits" class="menu link js-link">Fruits</a></li>
+            <li class="item"><a href="#contacts" class="menu link js-link">Contacts</a></li>
           </ul>
         </nav>
       </div>
@@ -1005,7 +1005,7 @@
     <div class="picture-box">
         <img class="basket" srcset="/group-3-final-project/assets/basket@1x-559571c0.jpg 1x, /group-3-final-project/assets/basket@2x-9a8a3d00.jpg 2x"
             src="./img/basket@1x.png" alt="empty basket" />
-        <a class="add-btn js-modal-close" href="#fruits">
+        <a class="add-btn js-modal-close js-link" href="#fruits">
             <svg class="add-svg" width="14" height="14">
                 <use href="/group-3-final-project/assets/symbol-defs-bfb235a6.svg#icon-arrow"></use>
             </svg>
@@ -1018,6 +1018,12 @@
 
     <div class="overlay js-overlay-modal"></div>
     <!-- JS -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     
     
     
