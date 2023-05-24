@@ -1,12 +1,18 @@
 Информация о проэкте:
 
+группа - 3-група-проєкт;
+
+название команды - Dev Monsters.
+
 live page:
 https://georgiysergeev.github.io/group-3-final-project/
+
 
 Git:
 https://github.com/GeorgiySergeev/group-3-final-project
 
-Dev Monsters
+
+Команда:
 
 Teem Lead /GitHab, code review/- Георгий Сергеев 
 Header  + mobile menu  - Оксана Танцюра
