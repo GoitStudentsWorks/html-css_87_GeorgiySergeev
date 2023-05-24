@@ -1,4 +1,5 @@
-Информация о проэкте.
+Информация о проэкте:
+
 live page:
 https://georgiysergeev.github.io/group-3-final-project/
 
